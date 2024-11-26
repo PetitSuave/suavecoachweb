@@ -17,7 +17,7 @@ export default function Page() {
       </a>
 
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Suave Portfolio, made simple!
+        Suave Portfolio, made simple!!!
       </h1>
 
       <div className="prose prose-neutral dark:prose-invert">
