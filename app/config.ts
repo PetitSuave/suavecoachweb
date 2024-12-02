@@ -1,5 +1,6 @@
 export const metaData = {
   baseUrl: "https://nextfolio-template.vercel.app/",
+  // TODO: kde vsude se vyuziva toto a kde to nema byt? (uz sem to odstranila z nadpisu)
   title: "Nextfolio",
   name: "Sirius",
   ogImage: "/opengraph-image.png",
