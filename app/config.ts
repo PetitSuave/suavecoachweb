@@ -10,7 +10,8 @@ export const metaData = {
 export const socialLinks = {
   twitter: "https://x.com/1tssirius",
   github: "https://github.com/1msirius/Nextfolio",
-  instagram: "https://www.instagram.com/",
-  linkedin: "https://www.linkedin.com/",
-  email: "mailto:example@gmail.com",
+  instagram: "https://www.instagram.com/suave.movement/",
+  facebook: "https://www.facebook.com/SuaveMovement/",
+  linkedin: "https://cz.linkedin.com/in/katerina-urbanova",
+  email: "mailto:katerina@urban.coach",
 };
