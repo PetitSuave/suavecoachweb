@@ -3,17 +3,17 @@ import {socialLinks} from "./config";
 import {OfferCard} from "./components/offer-card";
 
 const cards = [{
-    title: "Pro Firmy",
-    text: "Very descriptive sample text which tells you what I do",
-    link: "/baf"
+    title: "Pro Kariéru",
+    text: "Vhodné pro firmy i individuální zakázky. Potřebujete kouče do firmy? Potřebuješ kariérní koučing?",
+    link: "/work"
 }, {
-    title: "Pro Zivot",
-    text: "Very descriptive sample text which tells you what I do, Very descriptive sample text which tells you what I do",
-    link: "/lek"
+    title: "Pro Život",
+    text: "Pro běžné i težké životní situace, lifestylové změny, osobnostní rozovoj nebo pomoc v rozhodování.",
+    link: "/life"
 }, {
     title: "Pro Pohyb",
-    text: "Very descriptive sample text which tells you what I do",
-    link: "/baf"
+    text: "Rozvoj Vašich pohybových aktivit, efektivita tréninku, kreativita a překonávání překážek",
+    link: "/movement"
 }
 ]
 
@@ -30,6 +30,8 @@ export default function Page() {
                 </p>
                 <p>
                     Profesiaonalni kouc!
+                    Certifikovaný MŠMT
+                    Kouč pro tělo i mysl
                 </p>
             </div>
 

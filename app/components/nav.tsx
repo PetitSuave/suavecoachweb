@@ -14,7 +14,7 @@ export function Navbar() {
         <div className="flex items-center">
           <Link href="/" className="tracking-tight">
             <p className="text-center text-3xl font-semibold">{"KATEŘINA URBANOVÁ"}</p>
-            <p className="text-center text-base">{"Kouč pro tělo i mysl"}</p>
+            <p className="text-center text-base">{"Integrativní Kouč"}</p>
           </Link>
         </div>
         <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
