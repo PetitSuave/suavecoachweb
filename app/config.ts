@@ -1,11 +1,11 @@
 export const metaData = {
-  baseUrl: "https://nextfolio-template.vercel.app/",
-  // TODO: kde vsude se vyuziva toto a kde to nema byt? (uz sem to odstranila z nadpisu)
-  title: "Nextfolio",
-  name: "Sirius",
+  baseUrl: "https://suave.urban.coach/",
+  // TODO: kde vsude se vyuziva toto a kde to nema byt? - V hlavice websity, vedle fav icon
+  title: "Kateřina Urbanová",
+  name: "Kateřina Urbanová",
   ogImage: "/opengraph-image.png",
   description:
-    "A clean, fast, and lightweight portfolio template built with Next.js, Vercel, and Tailwind CSS for optimal performance.",
+    "Kateřina Urbanová, integrativní kouč",
 };
 
 export const socialLinks = {

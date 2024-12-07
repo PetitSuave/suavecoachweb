@@ -3,8 +3,6 @@ import { metaData } from "../config";
 
 const navItems = {
   "/blog": { name: "Blog" },
-  "/projects": { name: "Projects" },
-  "/photos": { name: "Photos" },
 };
 
 export function Navbar() {
@@ -13,7 +11,7 @@ export function Navbar() {
       <div className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="tracking-tight">
-            <p className="text-center text-3xl font-semibold">{"KATEŘINA URBANOVÁ"}</p>
+            <p className="text-center text-3xl font-semibold uppercase">{metaData.title}</p>
             <p className="text-center text-base">{"Integrativní Kouč"}</p>
           </Link>
         </div>
