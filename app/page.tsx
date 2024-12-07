@@ -20,33 +20,52 @@ const cards = [{
 
 export default function Page() {
     return (
-        <section>
+        <div className="relative min-h-screen">
+            {
+                //bg-purple-200 to section - tady ty barvicky zatim nebrat vazne, to jen chuc vdiet jak to vypada. musime vyresit na celou sirku stejne jak ma opredloha a navic tam bude obrazek}
+            }
+            <section className="relative m-6">
             <h1 className="mb-8 text-2xl font-medium tracking-tight">
-                Suave Portfolio!!!
+               Kdo jsem?
             </h1>
-
             <div className="prose prose-neutral dark:prose-invert">
                 <p>
-                    Kdo jsem?
+                    Profesiaonalní kouč
                 </p>
                 <p>
-                    Profesiaonalni kouc!
                     Certifikovaný MŠMT
+                </p>
+                <p>
                     Kouč pro tělo i mysl
                 </p>
             </div>
-
-            <div className="flex flex-col md:flex-row">
-                {cards.map(card => (
-                    <div key={card.title} className="w-full md:w-1/3">
-                        <OfferCard title={card.title} text={card.text} link={card.link}/>
-                    </div>
-                ))}
-            </div>
-            <div className="w-3/4 mt-12 mx-auto">
-                <div className="mb-4 text-xl font-bold">Napiste mi</div>
-                <ContactForm />
-            </div>
         </section>
+            <section>
+                <div className="flex flex-col md:flex-row">
+                    {cards.map(card => (
+                        <div key={card.title} className="w-full md:w-1/3">
+                            <OfferCard title={card.title} text={card.text} link={card.link}/>
+                        </div>
+                    ))}
+                </div>
+                <div className="flex mt-12 mx-auto flex-row  md:flex-row ">
+                    <div className="flex flex-col w-1/3 m-6">
+                        <p>
+                            katerina@urban.coach
+                        </p>
+                        <p>
+                            Bankovni spojeni
+                        </p>
+                        <p>
+                           Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře. Pokud chcete ať vám zavolám, vyplňte také telefonní číslo.
+                        </p>
+                    </div>
+                    <div className="w-2/3 flex-col m-6">
+                        <div className="mb-4 text-xl font-bold">Kontaktujte mě</div>
+                        <ContactForm/>
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }
