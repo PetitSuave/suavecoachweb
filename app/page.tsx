@@ -25,21 +25,33 @@ export default function Page() {
                 //bg-purple-200 to section - tady ty barvicky zatim nebrat vazne, to jen chuc vdiet jak to vypada. musime vyresit na celou sirku stejne jak ma opredloha a navic tam bude obrazek}
             }
             <section className="relative m-6">
-            <h1 className="mb-8 text-2xl font-medium tracking-tight">
-               Kdo jsem?
-            </h1>
-            <div className="prose prose-neutral dark:prose-invert">
-                <p>
-                    Profesiaonalní kouč
-                </p>
-                <p>
-                    Certifikovaný MŠMT
-                </p>
-                <p>
-                    Kouč pro tělo i mysl
-                </p>
-            </div>
-        </section>
+                <div className="flex mt-12 mx-auto flex-row  md:flex-row ">
+                    <div className="flex flex-col md:flex-row w-2/3 flex-col m-6">
+                        <h1 className="mb-8 text-2xl font-medium tracking-tight">
+                            Kdo jsem?
+                        </h1>
+                        <div className="prose prose-neutral dark:prose-invert">
+                            <p>
+                                Profesiaonalní kouč
+                            </p>
+                            <p>
+                                Certifikovaný MŠMT
+                            </p>
+                            <p>
+                                Kouč pro tělo i mysl
+                            </p>
+                        </div>
+                    </div>
+                    <div className="flex flex-col w-1/3 m-6">
+                        <div className="flex justify-center items-center">
+                            <div className="rounded-full overflow-hidden aspect-square">
+                                <img src="/photos/photo1.jpg" alt="Katerina Urbanova"
+                                     className="w-full h-full object-cover"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section>
                 <div className="flex flex-col md:flex-row">
                     {cards.map(card => (
