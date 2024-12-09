@@ -45,8 +45,8 @@ export default function Page() {
                     <div className="flex flex-col w-1/3 m-6">
                         <div className="flex justify-center items-center">
                             <div className="rounded-full overflow-hidden aspect-square">
-                                <img src="/photos/photo1.jpg" alt="Katerina Urbanova"
-                                     className="w-full h-full object-cover"/>
+                                <Image src="/photos/photo1.jpg" alt="Katerina Urbanova"
+                                     className="w-full h-full object-cover scale-x-[-1]"/>
                             </div>
                         </div>
                     </div>
