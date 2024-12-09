@@ -2,6 +2,10 @@ import Image from "next/image";
 import {socialLinks, metaData} from "./config";
 import {OfferCard} from "./components/offer-card";
 import ContactForm from "./components/contact-form";
+import { LuMail } from "react-icons/lu";
+//import { LuBadgeEuro } from "react-icons/lu";
+
+//import { LuReceiptEuro } from "react-icons/lu";
 
 const cards = [{
     title: "Pro Kariéru",
@@ -29,7 +33,7 @@ export default function Page() {
                     <p className="text-2xl leading-tight m-9">
                         Společně vytvoříme cestu, která bude skutečně tvoje.
                         {
-                            //odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
+                            //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
                         }
                     </p>
                 </div>
@@ -40,6 +44,9 @@ export default function Page() {
                         <div className="prose prose-neutral dark:prose-invert">
                             <h1 className="mb-12 text-2xl font-medium tracking-tight">
                                 Kdo jsem?
+                                {
+                                    //TODO: Bud tady nebo k fotce by se melo dat tlacitko zjistit vice a tam dat muj pribeh a certifikace.
+                                }
                             </h1>
                             <p>
                                 Absolvovala jsem výcvik "Integrativní kouč" akreditovaný MŠMT a získala praxi aplikováním koučovacího přístupu do firmeního i fitness prostředí.
@@ -68,21 +75,30 @@ export default function Page() {
                         </div>
                     ))}
                 </div>
-                <div className="flex mt-12 mx-auto flex-row  md:flex-row ">
-                    <div className="flex flex-col w-1/3 m-9">
-                        <p>
-                            katerina@urban.coach
+                <div className="">
+                    <div className=" mt-24 ml-9 text-2xl font-medium tracking-tight">
+                        Kontaktuj mě
+                    </div>
+                    <div className="flex mx-auto flex-row  md:flex-row ">
+                        <div className="flex flex-col  flex-row w-1/3 m-9">
+                        <p className="mb-6 flex">
+                            <LuMail className="mt-1 mr-3"/> katerina@urban.coach
+                        </p>
+                        <p className="mb-6">
+                            {
+                                // <LuReceiptEuro className="mt-1 mr-3"/>
+                                }Bankovni spojeni
+                        </p>
+                        <p className="mb-6">
+                            Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře.
                         </p>
                         <p>
-                            Bankovni spojeni
-                        </p>
-                        <p>
-                           Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře. Pokud chcete ať vám zavolám, vyplňte také telefonní číslo.
+                            Pokud se chete spojit po telefonu, vyplňte také telefonní číslo, případně navrhovaný čas.
                         </p>
                     </div>
-                    <div className="w-2/3 flex-col m-9 ml-3">
-                        <div className="mb-4 text-xl font-bold">Kontaktujte mě</div>
-                        <ContactForm/>
+                        <div className="w-2/3 flex-col m-9 ml-3">
+                            <ContactForm/>
+                        </div>
                     </div>
                 </div>
             </section>
