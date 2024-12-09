@@ -24,21 +24,31 @@ export default function Page() {
             {
                 //bg-purple-200 to section - tady ty barvicky zatim nebrat vazne, to jen chuc vdiet jak to vypada. musime vyresit na celou sirku stejne jak ma opredloha a navic tam bude obrazek}
             }
+            <section>
+                <div className="flex flex-col bg-teal-400">
+                    <p className="text-2xl leading-tight m-9">
+                        Společně vytvoříme cestu, která bude skutečně tvoje.
+                        {
+                            //odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
+                        }
+                    </p>
+                </div>
+            </section>
             <section className="relative">
                 <div className="flex mt-12 mb-12 mx-auto flex-row  md:flex-row ">
-                    <div className="flex md:flex-row w-2/3 flex-col m-9">
+                    <div className="flex md:flex-row w-2/3 flex-col ml-9 mb-9">
                         <div className="prose prose-neutral dark:prose-invert">
                             <h1 className="mb-12 text-2xl font-medium tracking-tight">
                                 Kdo jsem?
                             </h1>
                             <p>
-                                Profesiaonalní kouč
+                                Absolvovala jsem výcvik "Integrativní kouč" akreditovaný MŠMT a získala praxi aplikováním koučovacího přístupu do firmeního i fitness prostředí.
                             </p>
                             <p>
-                                Certifikovaný MŠMT
+                                Během své více než patnáctileté IT kariéry ve vedení lidí a  jako osobní trenérka jsem v koučinku našla přístup, který je v souladu s mými vnitřními hodnotami. Umožňuje mi pomáhat lidem rozvíjejícím přísupem a respektovat jejich jedinečnost a kompetenci  pro sebe udělat to nejlepší.
                             </p>
                             <p>
-                                Kouč pro tělo i mysl
+                                Mojí nejoblíbenější oblastí je navrácení koučinku zpátky k pohybovým disciplínám.
                             </p>
                         </div>
                     </div>
