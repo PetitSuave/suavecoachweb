@@ -3,8 +3,6 @@ import {socialLinks, metaData} from "./config";
 import {OfferCard} from "./components/offer-card";
 import ContactForm from "./components/contact-form";
 import { LuMail } from "react-icons/lu";
-import { LuBadgeEuro } from "react-icons/lu";
-
 import { LuReceiptEuro } from "react-icons/lu";
 
 const cards = [{
