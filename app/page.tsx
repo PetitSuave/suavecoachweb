@@ -3,9 +3,9 @@ import {socialLinks, metaData} from "./config";
 import {OfferCard} from "./components/offer-card";
 import ContactForm from "./components/contact-form";
 import { LuMail } from "react-icons/lu";
-//import { LuBadgeEuro } from "react-icons/lu";
+import { LuBadgeEuro } from "react-icons/lu";
 
-//import { LuReceiptEuro } from "react-icons/lu";
+import { LuReceiptEuro } from "react-icons/lu";
 
 const cards = [{
     title: "Pro Kariéru",
@@ -84,10 +84,8 @@ export default function Page() {
                         <p className="mb-6 flex">
                             <LuMail className="mt-1 mr-3"/> katerina@urban.coach
                         </p>
-                        <p className="mb-6">
-                            {
-                                // <LuReceiptEuro className="mt-1 mr-3"/>
-                                }Bankovni spojeni
+                        <p className="mb-6 flex">
+                            <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni
                         </p>
                         <p className="mb-6">
                             Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře.
