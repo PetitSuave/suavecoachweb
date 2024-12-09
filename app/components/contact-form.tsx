@@ -9,8 +9,8 @@ export default function ContactForm() {
         const formData = new FormData(event.target);
 
         formData.append("access_key", "4b2cace2-383a-42be-9871-7f9142384649");
-        formData.append("from_name", "Koucing Web")
-        formData.append("subject", `Koucing dotaz od ${formData.get("name")}`)
+        formData.append("from_name", "Koučink Web")
+        formData.append("subject", `Koučink dotaz od ${formData.get("name")}`)
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -38,7 +38,7 @@ export default function ContactForm() {
                     <div className="flex md:space-x-4 flex-col md:flex-row items-center">
                         <label
                             className="mr-2 font-bold md:w-2/12"
-                            htmlFor="name">Jmeno</label>
+                            htmlFor="name">Jméno</label>
                         <input
                             className="pl-2 border-2 border-black w-full md:w-10/12"
                             type="text" name="name" required/>
@@ -51,10 +51,21 @@ export default function ContactForm() {
                             className="pl-2 border-2 border-black w-full md:w-10/12"
                             type="email" name="email" required/>
                     </div>
+                    <div className="flex md:space-x-4 flex-col md:flex-row items-center">
+                        <label
+                            className="mr-2 font-bold md:w-2/12"
+                            htmlFor="email">Telefon</label>
+                        {
+                            //TODO: Dalo by se sem tenkym pismem do zavorky napsat, ze je to volitelne? Nebo nejak jinak odlisit volitelne pole?
+                        }
+                        <input
+                            className="pl-2 border-2 border-black w-full md:w-10/12"
+                            type="tel" name="tel"/>
+                    </div>
                     <div className="flex flex-col">
                         <label
                             className="mb-4 font-bold"
-                            htmlFor="message">Zprava</label>
+                            htmlFor="message">Váš dotaz</label>
                         <textarea
                             className="p-2 border-2 border-black"
                             rows={6}
