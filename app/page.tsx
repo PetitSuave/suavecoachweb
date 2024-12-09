@@ -2,8 +2,7 @@ import Image from "next/image";
 import {socialLinks, metaData} from "./config";
 import {OfferCard} from "./components/offer-card";
 import ContactForm from "./components/contact-form";
-import { LuMail } from "react-icons/lu";
-import { LuReceiptEuro } from "react-icons/lu";
+import {LuMail, LuPhoneIncoming, LuReceiptEuro} from "react-icons/lu";
 
 const cards = [{
     title: "Pro Kariéru",
@@ -79,19 +78,20 @@ export default function Page() {
                     </div>
                     <div className="flex mx-auto flex-row  md:flex-row ">
                         <div className="flex flex-col  flex-row w-1/3 m-9">
-                        <p className="mb-6 flex">
-                            <LuMail className="mt-1 mr-3"/> katerina@urban.coach
-                        </p>
-                        <p className="mb-6 flex">
-                            <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni
-                        </p>
-                        <p className="mb-6">
-                            Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře.
-                        </p>
-                        <p>
-                            Pokud se chete spojit po telefonu, vyplňte také telefonní číslo, případně navrhovaný čas.
-                        </p>
-                    </div>
+                            <p className="mb-6">
+                                Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře.
+                            </p>
+                            <p className="mb-6 flex">
+                                <LuMail className="mt-1 mr-3"/> katerina@urban.coach
+                            </p>
+                            <p className="mb-6 flex">
+                                <LuPhoneIncoming className="mr-3 size-10"/>  Pokud se chete spojit po telefonu, vyplňte také telefonní číslo, případně navrhovaný
+                                čas.
+                            </p>
+                            <p className="mb-6 flex">
+                                <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni
+                            </p>
+                        </div>
                         <div className="w-2/3 flex-col m-9 ml-3">
                             <ContactForm/>
                         </div>
