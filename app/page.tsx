@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {socialLinks} from "./config";
+import {socialLinks, metaData} from "./config";
 import {OfferCard} from "./components/offer-card";
 import ContactForm from "./components/contact-form";
 
@@ -42,15 +42,11 @@ export default function Page() {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col w-1/3 m-6">
-                        <div className="flex justify-center items-center">
-                            <div className="">
-                                <Image src="/photos/tmp_ProfilePicture.jpg" alt="Katerina Urbanova"
-                                       layout="fill"
-                                       objectFit="cover"
-                                       className="relative w-full h-full scale-x-[-1] rounded-full overflow-hidden aspect-square" />
-                            </div>
-                        </div>
+                    <div className="w-1/3 m-6">
+                        <Image src="/photos/tmp_ProfilePicture.jpg" alt={metaData.name}
+                               width={672} height={672}
+                               className="rounded-full"
+                        />
                     </div>
                 </div>
             </section>
