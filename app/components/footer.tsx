@@ -1,17 +1,8 @@
 "use client";
 
 import React from "react";
-{/* TODO: pouzit ikony z LU */}
-import {
-  FaXTwitter,
-  FaGithub,
-  FaInstagram,
-  FaRss,
-  FaLinkedinIn,
-} from "react-icons/fa6";
-import { TbMailFilled } from "react-icons/tb";
 import { metaData, socialLinks } from "app/config";
-import {FaFacebook} from "react-icons/fa";
+import {LuFacebook, LuInstagram, LuLinkedin, LuMail} from "react-icons/lu";
 
 const YEAR = new Date().getFullYear();
 
@@ -26,10 +17,10 @@ function SocialLink({ href, icon: Icon }) {
 function SocialLinks() {
   return (
     <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
-      <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
-      <SocialLink href={socialLinks.facebook} icon={FaFacebook} />
-      <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
-      <SocialLink href={socialLinks.email} icon={TbMailFilled} />
+      <SocialLink href={socialLinks.instagram} icon={LuInstagram} />
+      <SocialLink href={socialLinks.facebook} icon={LuFacebook} />
+      <SocialLink href={socialLinks.linkedin} icon={LuLinkedin} />
+      <SocialLink href={socialLinks.email} icon={LuMail} />
         {/* <a href="/rss.xml" target="_self">
            <FaRss />
          </a> */}

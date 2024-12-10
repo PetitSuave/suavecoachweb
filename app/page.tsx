@@ -2,6 +2,7 @@ import Image from "next/image";
 import {socialLinks, metaData} from "./config";
 import {OfferCard} from "./components/offer-card";
 import ContactForm from "./components/contact-form";
+import {LuMail, LuPhoneIncoming, LuReceiptEuro} from "react-icons/lu";
 
 const cards = [{
     title: "Pro Kariéru",
@@ -24,21 +25,34 @@ export default function Page() {
             {
                 //bg-purple-200 to section - tady ty barvicky zatim nebrat vazne, to jen chuc vdiet jak to vypada. musime vyresit na celou sirku stejne jak ma opredloha a navic tam bude obrazek}
             }
+            <section>
+                <div className="flex flex-col bg-teal-400">
+                    <p className="text-2xl leading-tight m-9">
+                        Společně vytvoříme cestu, která bude skutečně tvoje.
+                        {
+                            //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
+                        }
+                    </p>
+                </div>
+            </section>
             <section className="relative">
                 <div className="flex mt-12 mb-12 mx-auto flex-row  md:flex-row ">
-                    <div className="flex md:flex-row w-2/3 flex-col m-9">
+                    <div className="flex md:flex-row w-2/3 flex-col ml-9 mb-9">
                         <div className="prose prose-neutral dark:prose-invert">
                             <h1 className="mb-12 text-2xl font-medium tracking-tight">
                                 Kdo jsem?
+                                {
+                                    //TODO: Bud tady nebo k fotce by se melo dat tlacitko zjistit vice a tam dat muj pribeh a certifikace.
+                                }
                             </h1>
                             <p>
-                                Profesiaonalní kouč
+                                Absolvovala jsem výcvik "Integrativní kouč" akreditovaný MŠMT a získala praxi aplikováním koučovacího přístupu do firmeního i fitness prostředí.
                             </p>
                             <p>
-                                Certifikovaný MŠMT
+                                Během své více než patnáctileté IT kariéry ve vedení lidí a  jako osobní trenérka jsem v koučinku našla přístup, který je v souladu s mými vnitřními hodnotami. Umožňuje mi pomáhat lidem rozvíjejícím přísupem a respektovat jejich jedinečnost a kompetenci  pro sebe udělat to nejlepší.
                             </p>
                             <p>
-                                Kouč pro tělo i mysl
+                                Mojí nejoblíbenější oblastí je navrácení koučinku zpátky k pohybovým disciplínám.
                             </p>
                         </div>
                     </div>
@@ -58,21 +72,29 @@ export default function Page() {
                         </div>
                     ))}
                 </div>
-                <div className="flex mt-12 mx-auto flex-row  md:flex-row ">
-                    <div className="flex flex-col w-1/3 m-9">
-                        <p>
-                            katerina@urban.coach
-                        </p>
-                        <p>
-                            Bankovni spojeni
-                        </p>
-                        <p>
-                           Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře. Pokud chcete ať vám zavolám, vyplňte také telefonní číslo.
-                        </p>
+                <div className="">
+                    <div className=" mt-24 ml-9 text-2xl font-medium tracking-tight">
+                        Kontaktuj mě
                     </div>
-                    <div className="w-2/3 flex-col m-9 ml-3">
-                        <div className="mb-4 text-xl font-bold">Kontaktujte mě</div>
-                        <ContactForm/>
+                    <div className="flex mx-auto flex-row  md:flex-row ">
+                        <div className="flex flex-col  flex-row w-1/3 m-9">
+                            <p className="mb-6">
+                                Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře.
+                            </p>
+                            <p className="mb-6 flex">
+                                <LuMail className="mt-1 mr-3"/> katerina@urban.coach
+                            </p>
+                            <p className="mb-6 flex">
+                                <LuPhoneIncoming className="mr-3 size-10"/>  Pokud se chete spojit po telefonu, vyplňte také telefonní číslo, případně navrhovaný
+                                čas.
+                            </p>
+                            <p className="mb-6 flex">
+                                <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni
+                            </p>
+                        </div>
+                        <div className="w-2/3 flex-col m-9 ml-3">
+                            <ContactForm/>
+                        </div>
                     </div>
                 </div>
             </section>
