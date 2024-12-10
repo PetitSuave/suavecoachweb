@@ -35,7 +35,7 @@ export default function ContactForm() {
                 <form
                     className="flex flex-col space-y-4"
                     onSubmit={handleSubmit}>
-                    <div className="flex md:space-x-4 flex-col md:flex-row items-center">
+                    <div className="flex md:space-x-4 flex-col md:flex-row">
                         <label
                             className="mr-2 font-bold md:w-2/12"
                             htmlFor="name">Jméno</label>
@@ -43,7 +43,7 @@ export default function ContactForm() {
                             className="pl-2 border-2 border-black w-full md:w-10/12"
                             type="text" name="name" required/>
                     </div>
-                    <div className="flex md:space-x-4 flex-col md:flex-row items-center">
+                    <div className="flex md:space-x-4 flex-col md:flex-row">
                         <label
                             className="mr-2 font-bold md:w-2/12"
                             htmlFor="email">E-mail</label>
@@ -51,10 +51,13 @@ export default function ContactForm() {
                             className="pl-2 border-2 border-black w-full md:w-10/12"
                             type="email" name="email" required/>
                     </div>
-                    <div className="flex md:space-x-4 flex-col md:flex-row items-center">
+                    <div className="flex md:space-x-4 flex-col md:flex-row">
                         <label
                             className="mr-2 font-bold md:w-2/12"
-                            htmlFor="email">Telefon</label>
+                            htmlFor="email">
+                            Telefon
+                            <span className="ml-2 font-light italic md:block md:ml-0">(volitelné)</span>
+                        </label>
                         {
                             //TODO: Dalo by se sem tenkym pismem do zavorky napsat, ze je to volitelne? Nebo nejak jinak odlisit volitelne pole?
                         }
@@ -62,9 +65,9 @@ export default function ContactForm() {
                             className="pl-2 border-2 border-black w-full md:w-10/12"
                             type="tel" name="tel"/>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col mb-4">
                         <label
-                            className="mb-4 font-bold"
+                            className="font-bold"
                             htmlFor="message">Váš dotaz</label>
                         <textarea
                             className="p-2 border-2 border-black"
