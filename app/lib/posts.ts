@@ -37,7 +37,8 @@ function readMDXFile(filePath: string) {
 }
 
 function getMDXData(dir: string) {
-  let mdxFiles = getMDXFiles(dir);
+  const blacklist = ['custom-mdx-examples.mdx', 'getting-started.mdx']
+  let mdxFiles = getMDXFiles(dir).filter(file => !blacklist.includes(file));
   return mdxFiles.map((file) => {
     let { metadata, content } = readMDXFile(path.join(dir, file));
     let slug = path.basename(file, path.extname(file));
