@@ -21,9 +21,6 @@ function SocialLinks() {
       <SocialLink href={socialLinks.facebook} icon={LuFacebook} />
       <SocialLink href={socialLinks.linkedin} icon={LuLinkedin} />
       <SocialLink href={socialLinks.email} icon={LuMail} />
-        {/* <a href="/rss.xml" target="_self">
-           <FaRss />
-         </a> */}
     </div>
   );
 }
@@ -34,7 +31,7 @@ export default function Footer() {
       <time>© {YEAR}</time>{" "}
       <a
         className="no-underline"
-        href={socialLinks.twitter}
+        href={socialLinks.instagram}
         target="_blank"
         rel="noopener noreferrer"
       >
