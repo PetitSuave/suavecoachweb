@@ -36,7 +36,7 @@ export default function Page() {
                 </div>
             </section>
             <section className="relative">
-                <div className="flex mt-12 mb-12 mx-auto flex-col-reverse md:flex-row">
+                <div className="flex mt-12 mb-12 mx-auto flex-col-reverse md:flex-row ">
                     <div className="flex md:flex-row md:w-2/3 flex-col md:ml-9 mb-9">
                         <div className="prose prose-neutral dark:prose-invert">
                             <h1 className="mb-12 text-2xl font-medium tracking-tight">
