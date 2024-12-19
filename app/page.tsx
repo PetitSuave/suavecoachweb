@@ -25,8 +25,12 @@ export default function Page() {
             {
                 //bg-purple-200 to section - tady ty barvicky zatim nebrat vazne, to jen chuc vdiet jak to vypada. musime vyresit na celou sirku stejne jak ma opredloha a navic tam bude obrazek}
             }
-            <section>
-                <div className="flex flex-col bg-[url('/photos/bg-flowers_big.jpg')] bg-center bg-cover bg-opacity-10">
+            <section className="relative w-screen -ml-[calc(50vw-50%)]">
+                <Image
+                    className="-z-10 object-center object-cover"
+                    src={"/photos/bg-flowers_big.JPG"} alt={"Something"} fill
+                />
+                <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
                     <p className="text-3xl leading-tight mt-12 mb-12 mx-9 text-white">
                         Společně vytvoříme cestu, která bude skutečně tvoje.
                         {
