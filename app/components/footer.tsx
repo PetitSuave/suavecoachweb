@@ -3,6 +3,7 @@
 import React from "react";
 import { metaData, socialLinks } from "app/config";
 import {LuFacebook, LuInstagram, LuLinkedin, LuMail} from "react-icons/lu";
+import {ScreenWideSection} from "./screen-wide-section";
 
 const YEAR = new Date().getFullYear();
 
@@ -27,25 +28,20 @@ function SocialLinks() {
 
 export default function Footer() {
   return (
-    <small className="block lg:mt-24 mt-16 bg-teal-600">
-      <time>© {YEAR}</time>{" "}
-      <a
-        className="no-underline"
-        href={socialLinks.instagram}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {metaData.title}
-      </a>
-      <style jsx>{`
-        @media screen and (max-width: 480px) {
-          article {
-            padding-top: 2rem;
-            padding-bottom: 4rem;
-          }
-        }
-      `}</style>
-      <SocialLinks />
-    </small>
+      <ScreenWideSection background={<div className="absolute w-full h-full -z-10 bg-teal-600" />}>
+          <small className="block lg:pt-24 pt-16 pb-20 lg:pb-40">
+              <time>© {YEAR}</time>
+              {" "}
+              <a
+                  className="no-underline"
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                  {metaData.title}
+              </a>
+              <SocialLinks/>
+          </small>
+      </ScreenWideSection>
   );
 }
