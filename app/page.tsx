@@ -1,8 +1,10 @@
+import React from "react";
 import Image from "next/image";
 import {socialLinks, metaData} from "./config";
 import {OfferCard} from "./components/offer-card";
 import ContactForm from "./components/contact-form";
 import {LuMail, LuPhoneIncoming, LuReceiptEuro} from "react-icons/lu";
+import {ScreenWideSection} from "./components/screen-wide-section";
 
 const cards = [{
     title: "Pro Kariéru",
@@ -25,20 +27,18 @@ export default function Page() {
             {
                 //bg-purple-200 to section - tady ty barvicky zatim nebrat vazne, to jen chuc vdiet jak to vypada. musime vyresit na celou sirku stejne jak ma opredloha a navic tam bude obrazek}
             }
-            <section className="relative w-screen -ml-[calc(50vw-50%)]">
+            <ScreenWideSection background={
                 <Image
                     className="-z-10 object-center object-cover"
                     src={"/photos/bg-flowers_big.JPG"} alt={"Flowers"} fill
-                />
-                <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
-                    <p className="text-3xl leading-tight mt-12 mb-12 mx-9 text-white">
-                        Společně vytvoříme cestu, která bude skutečně tvoje.
-                        {
-                            //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
-                        }
-                    </p>
-                </div>
-            </section>
+                />}>
+                <p className="text-3xl leading-tight mt-12 mb-12 mx-9 text-white">
+                    Společně vytvoříme cestu, která bude skutečně tvoje.
+                    {
+                        //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
+                    }
+                </p>
+            </ScreenWideSection>
             <section className="relative">
                 <div className="flex mt-12 mb-12 mx-auto flex-col-reverse md:flex-row ">
                     <div className="flex md:flex-row md:w-2/3 flex-col md:ml-9 mb-9">
@@ -72,19 +72,18 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section className="relative w-screen -ml-[calc(50vw-50%)] py-16">
-                <Image
-                    className="-z-10 object-center object-cover"
-                    src={"/photos/bg-forest-tmp.png"} alt={"Calm Forest"} fill
-                />
-                <div className="flex flex-col md:flex-row w-full max-w-[960px] mx-auto justify-center">
+            <ScreenWideSection background={<Image
+                className="-z-10 object-center object-cover"
+                src={"/photos/bg-forest-tmp.png"} alt={"Calm Forest"} fill
+            />}>
+                <div className="flex flex-col md:flex-row py-16">
                     {cards.map(card => (
                         <div key={card.title} className="w-full md:w-1/3">
                             <OfferCard title={card.title} text={card.text} link={card.link}/>
                         </div>
                     ))}
                 </div>
-            </section>
+            </ScreenWideSection>
             <section className="relative w-screen -ml-[calc(50vw-50%)] bg-violet-100">
                 <div className="">
                     <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
@@ -117,5 +116,5 @@ export default function Page() {
                 </div>
             </section>
         </div>
-);
+    );
 }
