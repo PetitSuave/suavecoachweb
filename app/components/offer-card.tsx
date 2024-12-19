@@ -7,17 +7,17 @@ export type OfferCardProps = {
 export function OfferCard({title, text, link}: OfferCardProps) {
     return (
         <div
-            className="relative min-h-full border-solid border-black border-2 m-2 p-6 bg-yellow-50"
+            className="relative min-h-full border-solid border-teal-600 border-2 m-2 p-9 bg-gradient-to-b from-teal-50 to-teal-200"
         >
             <div className="text-center font-bold">
                 {title}
             </div>
-            <div className="mt-2 mb-10 mx-2">
+            <div className="mt-6 mb-16 mx-2">
                 {text}
             </div>
-            <div className="absolute flex justify-center items-center bottom-3 mx-auto inset-x-0">
+            <div className="absolute flex justify-center items-center bottom-9 mx-auto inset-x-0">
                 <a href={link}>
-                    <button className="rounded-none bg-black text-white p-2 hover:bg-gray-600">
+                    <button className="rounded-none bg-black text-white p-2 hover:bg-gray-600 pl-6 pr-6">
                         Zjistit více
                     </button>
                 </a>
