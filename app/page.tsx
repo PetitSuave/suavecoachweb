@@ -28,7 +28,7 @@ export default function Page() {
             <section className="relative w-screen -ml-[calc(50vw-50%)]">
                 <Image
                     className="-z-10 object-center object-cover"
-                    src={"/photos/bg-flowers_big.JPG"} alt={"Something"} fill
+                    src={"/photos/bg-flowers_big.JPG"} alt={"Flowers"} fill
                 />
                 <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
                     <p className="text-3xl leading-tight mt-12 mb-12 mx-9 text-white">
@@ -50,10 +50,14 @@ export default function Page() {
                                 }
                             </h1>
                             <p>
-                                Absolvovala jsem výcvik "Integrativní kouč" akreditovaný MŠMT a získala praxi aplikováním koučovacího přístupu do firmeního i fitness prostředí.
+                                Absolvovala jsem výcvik "Integrativní kouč" akreditovaný MŠMT a získala praxi
+                                aplikováním koučovacího přístupu do firmeního i fitness prostředí.
                             </p>
                             <p>
-                                Během své více než patnáctileté IT kariéry ve vedení lidí a  jako osobní trenérka jsem v koučinku našla přístup, který je v souladu s mými vnitřními hodnotami. Umožňuje mi pomáhat lidem rozvíjejícím přísupem a respektovat jejich jedinečnost a kompetenci  pro sebe udělat to nejlepší.
+                                Během své více než patnáctileté IT kariéry ve vedení lidí a jako osobní trenérka jsem v
+                                koučinku našla přístup, který je v souladu s mými vnitřními hodnotami. Umožňuje mi
+                                pomáhat lidem rozvíjejícím přísupem a respektovat jejich jedinečnost a kompetenci pro
+                                sebe udělat to nejlepší.
                             </p>
                             <p>
                                 Mojí nejoblíbenější oblastí je navrácení koučinku zpátky k pohybovým disciplínám.
@@ -68,14 +72,20 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section>
-                <div className="flex flex-col md:flex-row">
+            <section className="relative w-screen -ml-[calc(50vw-50%)]">
+                <Image
+                    className="-z-10 object-center object-cover"
+                    src={"/photos/bg-forest-tmp.png"} alt={"Calm Forest"} fill
+                />
+                <div className="flex flex-col md:flex-row w-full max-w-[960px] mx-auto justify-center">
                     {cards.map(card => (
                         <div key={card.title} className="w-full md:w-1/3">
                             <OfferCard title={card.title} text={card.text} link={card.link}/>
                         </div>
                     ))}
                 </div>
+            </section>
+            <section className="relative">
                 <div className="">
                     <div className=" mt-24 md:ml-9 text-2xl font-medium tracking-tight">
                         Kontaktuj mě
@@ -89,7 +99,8 @@ export default function Page() {
                                 <LuMail className="mt-1 mr-3"/> katerina@urban.coach
                             </p>
                             <p className="mb-6 flex">
-                                <LuPhoneIncoming className="mr-3 size-10"/>  Pokud se chete spojit po telefonu, vyplňte také telefonní číslo, případně navrhovaný
+                                <LuPhoneIncoming className="mr-3 size-10"/> Pokud se chete spojit po telefonu, vyplňte
+                                také telefonní číslo, případně navrhovaný
                                 čas.
                             </p>
                             <p className="mb-6 flex">
