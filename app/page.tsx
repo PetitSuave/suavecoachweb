@@ -26,12 +26,11 @@ export default function Page() {
                 //bg-purple-200 to section - tady ty barvicky zatim nebrat vazne, to jen chuc vdiet jak to vypada. musime vyresit na celou sirku stejne jak ma opredloha a navic tam bude obrazek}
             }
             <section>
-                <div className="flex flex-col bg-teal-400">
-                    <p className="text-2xl leading-tight m-9">
+                <div className="flex flex-col bg-[url('/photos/bg-flowers_big.jpg')] bg-center bg-cover bg-opacity-10">
+                    <p className="text-3xl leading-tight mt-12 mb-12 mx-9 text-white">
                         Společně vytvoříme cestu, která bude skutečně tvoje.
                         {
                             //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
-                            // testing to push to different branch
                         }
                     </p>
                 </div>
