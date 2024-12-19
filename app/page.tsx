@@ -31,6 +31,7 @@ export default function Page() {
                         Společně vytvoříme cestu, která bude skutečně tvoje.
                         {
                             //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
+                            // testing to push to different branch
                         }
                     </p>
                 </div>
