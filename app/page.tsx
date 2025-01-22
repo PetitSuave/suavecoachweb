@@ -74,7 +74,7 @@ export default function Page() {
             </section>
             <ScreenWideSection background={<Image
                 className="-z-10 object-center object-cover"
-                src={"/photos/bg-forest.png"} alt={"Calm Forest"} fill
+                src={"/photos/bg-forest-sharp.png"} alt={"Calm Forest"} fill
             />}>
                 <div className="flex flex-col md:flex-row py-16">
                     {cards.map(card => (
