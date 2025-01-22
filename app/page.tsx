@@ -115,6 +115,38 @@ export default function Page() {
                     </div>
                 </div>
             </section>
+            <section className="relative w-screen -ml-[calc(50vw-50%)]">
+                <div className="">
+                    <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
+                        <div className=" mt-16 md:ml-9 text-2xl font-medium tracking-tight">
+                            Ceník
+                        </div>
+                        <div className="flex mx-auto flex-col md:flex-row ">
+                            <div className="flex flex-col md:w-1/3 mt-3 md:m-9">
+                                    <p className="mb-6 font-bold"> U vás </p>
+                                    <p> On-side Koučink 1000 Kč 50 min</p>
+                                    <p> vaše prostory nebo cowork </p>
+                            </div>
+                            <div className="flex flex-col md:w-1/3 mt-3 md:m-9">
+                                <p className="mb-6 font-bold"> On-line </p>
+                                <p> Koučink 800 Kč 50 min </p>
+                                    <p> Koučink 1350 Kč 80 min </p>
+                                    <p> Zvýhodněná sazba 600 Kč 50 min </p>
+                                    <p> Zvýhodněná sazba 850 Kč 80 min </p>
+                                </div>
+                            <div className="flex flex-col md:w-1/3 mt-3 md:m-9">
+                                <p className="mb-6 font-bold"> V Levitas </p>
+                                <p> Koučování 850 Kč 50min </p>
+                                <p> Překonání překážek v tanci a pohybu 1250 Kč 80min</p>
+                                </div>
+                            </div>
+                            <div className="mb-6">
+                                <p> Nabídka pro firmy: individuální domluva </p>
+                                <p> Pomáhající profese, nezisk... : individuální domluva </p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
         </div>
-    );
+);
 }
