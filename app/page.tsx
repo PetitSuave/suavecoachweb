@@ -142,9 +142,9 @@ export default function Page() {
                             </div>
                         <div className="mb-6 md:m-9">
                             <p> Nabídka pro firmy: individuální domluva </p>
-                            <p> Pomáhající profese, nezisk... : individuální domluva </p>
-                            <p> *Studenti, důchodci, rodiče malých dětí a kdokoli další kdo si plnou sazbu zrovna nemůze dovolit </p>
-                        </div>
+                            <p className="mb-6"> Pomáhající profese, nezisk... : individuální domluva </p>
+                            <p className="text-xs"> *Studenti, důchodci, rodiče malých dětí a kdokoli další kdo si plnou sazbu zrovna nemůze dovolit </p>
+                        </div >
                     </div>
                 </div>
             </section>
