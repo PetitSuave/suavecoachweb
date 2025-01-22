@@ -140,7 +140,7 @@ export default function Page() {
                                 <p> Překonání překážek v tanci a pohybu 1250 Kč 80min</p>
                                 </div>
                             </div>
-                            <div className="mb-6">
+                            <div className="mb-6 md:m-9">
                                 <p> Nabídka pro firmy: individuální domluva </p>
                                 <p> Pomáhající profese, nezisk... : individuální domluva </p>
                             </div>
