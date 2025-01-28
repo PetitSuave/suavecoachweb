@@ -84,7 +84,7 @@ export default function Page() {
                     ))}
                 </div>
             </ScreenWideSection>
-            <section className="relative w-screen -ml-[calc(50vw-50%)] bg-violet-100">
+            <section className="relative w-screen -ml-[calc(50vw-50%)] bg-violet-100" id="contact">
                 <div className="">
                     <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
                         <div className=" mt-16 md:ml-9 text-2xl font-medium tracking-tight">

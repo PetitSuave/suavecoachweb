@@ -2,7 +2,8 @@ import Link from "next/link";
 import { metaData } from "../config";
 
 const navItems = {
-  "/blog": { name: "Blog" },
+  // "/blog": { name: "Blog" },
+  "#contact": { name: "Kontakt" },
 };
 
 export function Navbar() {
