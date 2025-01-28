@@ -27,12 +27,13 @@ export default function Page() {
             {
                 //bg-purple-200 to section - tady ty barvicky zatim nebrat vazne, to jen chuc vdiet jak to vypada. musime vyresit na celou sirku stejne jak ma opredloha a navic tam bude obrazek}
             }
-            <ScreenWideSection background={
+            <ScreenWideSection
+                background={
                 <Image
-                    className="-z-10 object-center object-cover"
-                    src={"/photos/bg-flowers_big.JPG"} alt={"Flowers"} fill
+                    className="-z-10 object-bottom object-cover filter brightness-75"
+                    src={"/photos/bg-heather-cut-01.jpeg"} alt={"Flowers"} fill
                 />}>
-                <p className="text-3xl leading-tight mt-12 mb-12 mx-9 text-white">
+                <p className="text-3xl leading-tight font font-semibold mt-16 mb-16 mx-6 text-white">
                     Společně vytvoříme cestu, která bude skutečně tvoje.
                     {
                         //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
