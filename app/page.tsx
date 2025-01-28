@@ -33,7 +33,7 @@ export default function Page() {
                     className="-z-10 object-bottom object-cover filter brightness-75"
                     src={"/photos/bg-heather-cut-01.jpeg"} alt={"Flowers"} fill
                 />}>
-                <p className="text-3xl leading-tight font font-semibold mt-16 mb-16 mx-6 text-white">
+                <p className="text-3xl leading-tight font font-semibold mt-16 mb-16 mx-9 text-white">
                     Společně vytvoříme cestu, která bude skutečně tvoje.
                     {
                         //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
@@ -91,8 +91,8 @@ export default function Page() {
                         <div className=" mt-16 md:ml-9 text-2xl font-medium tracking-tight">
                             Kontaktujte mě
                         </div>
-                        <div className="flex mx-auto flex-col md:flex-row ">
-                            <div className="flex flex-col md:w-1/3 mt-3 md:m-9">
+                        <div className="flex mx-auto flex-col md:flex-row pr-3 md:m-3">
+                            <div className="flex flex-col md:w-1/3 mt-3 md:m-6">
                                 <p className="mb-6">
                                     Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře.
                                 </p>
@@ -109,7 +109,7 @@ export default function Page() {
                                 {/*    <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni*/}
                                 {/*</p>*/}
                             </div>
-                            <div className="md:w-2/3 flex-col md:m-6 ">
+                            <div className="md:w-2/3 flex-col md:m-3 ">
                                 <ContactForm/>
                             </div>
                         </div>

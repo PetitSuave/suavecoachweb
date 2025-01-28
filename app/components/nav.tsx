@@ -8,7 +8,7 @@ const navItems = {
 
 export function Navbar() {
   return (
-    <nav className="lg:mb-6 mb-3 py-5 ">
+    <nav className="lg:mb-6 mb-3 py-5 mx-9">
       <div className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex items-center">
           <Link href="/" className="tracking-tight">

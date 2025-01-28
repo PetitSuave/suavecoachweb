@@ -29,7 +29,7 @@ function SocialLinks() {
 export default function Footer() {
   return (
       <ScreenWideSection background={<div className="absolute w-full h-full -z-10 bg-teal-600" />}>
-          <small className="block lg:pt-24 pt-16 pb-20 lg:pb-40">
+          <small className="block lg:pt-24 pt-16 pb-20 lg:pb-40 md:ml-9">
               <time>© {YEAR}</time>
               {" "}
               <a
