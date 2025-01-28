@@ -40,7 +40,7 @@ export default function ContactForm() {
                             className="mr-2 font-bold md:w-2/12"
                             htmlFor="name">Jméno</label>
                         <input
-                            className="pl-2 border-2 border-black w-full md:w-10/12"
+                            className="pl-2 border-2 border-indigo-900 w-full md:w-10/12"
                             type="text" name="name" required/>
                     </div>
                     <div className="flex md:space-x-4 flex-col md:flex-row">
@@ -48,7 +48,7 @@ export default function ContactForm() {
                             className="mr-2 font-bold md:w-2/12"
                             htmlFor="email">E-mail</label>
                         <input
-                            className="pl-2 border-2 border-black w-full md:w-10/12"
+                            className="pl-2 border-2 border-indigo-900 w-full md:w-10/12"
                             type="email" name="email" required/>
                     </div>
                     <div className="flex md:space-x-4 flex-col md:flex-row">
@@ -62,7 +62,7 @@ export default function ContactForm() {
                             //TODO: Dalo by se sem tenkym pismem do zavorky napsat, ze je to volitelne? Nebo nejak jinak odlisit volitelne pole?
                         }
                         <input
-                            className="pl-2 border-2 border-black w-full md:w-10/12"
+                            className="pl-2 border-2 border-indigo-900 w-full md:w-10/12"
                             type="tel" name="tel"/>
                     </div>
                     <div className="flex flex-col mb-4">
@@ -70,7 +70,7 @@ export default function ContactForm() {
                             className="font-bold"
                             htmlFor="message">Váš dotaz</label>
                         <textarea
-                            className="p-2 border-2 border-black"
+                            className="p-2 border-2 border-indigo-900"
                             rows={6}
                             name="message" required/>
                     </div>
