@@ -88,7 +88,7 @@ export default function Page() {
                 <div className="">
                     <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
                         <div className=" mt-16 md:ml-9 text-2xl font-medium tracking-tight">
-                            Kontaktuj mě
+                            Kontaktujte mě
                         </div>
                         <div className="flex mx-auto flex-col md:flex-row ">
                             <div className="flex flex-col md:w-1/3 mt-3 md:m-9">
@@ -102,11 +102,11 @@ export default function Page() {
                                     <LuPhoneIncoming className="mr-3 size-10"/> Pokud se chete spojit po telefonu,
                                     vyplňte
                                     také telefonní číslo, případně navrhovaný
-                                    čas.
+                                    čas. Nebo preferenci komunikace pomocí SMS.
                                 </p>
-                                <p className="mb-6 flex">
-                                    <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni
-                                </p>
+                                {/*<p className="mb-6 flex">*/}
+                                {/*    <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni*/}
+                                {/*</p>*/}
                             </div>
                             <div className="md:w-2/3 flex-col md:m-6 ">
                                 <ContactForm/>
