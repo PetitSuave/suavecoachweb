@@ -8,18 +8,18 @@ import {ScreenWideSection} from "./components/screen-wide-section";
 
 const cards = [{
     title: "Kafe s koučkou",
-    text: "Pojďme si nezávisle pokecat o tom, co ti koučink může přinést a jak nastavit naši spolupráci.",
-    text2: <>On-line<br /> 30 minut <br /> Zdarma</>,
+    text: <> Pojďme si nezávisle pokecat o&nbsp;tom, co ti koučink může přinést a&nbsp;jak nastavit naši spolupráci. </>,
+    text2: <>On-line<br /> 30 minut <br /> Zdarma </>,
     link: "/work"
 }, {
     title: "Koučink pro Život",
-    text: "Pro běžné i težké životní situace, lifestylové změny, osobnostní či kariérní rozovoj nebo pomoc v rozhodování.",
+    text: <>Pro běžné i&nbsp;težké životní situace, lifestylové změny, osobnostní či&nbsp;kariérní rozovoj nebo pomoc v&nbsp;rozhodování.</>,
     text2: <>Osobně i on-line<br/> 50/80 minut <br /> 600 - 1250 Kč </>,
     link: "/life"
 }, {
     title: "Koučink pro Pohyb",
-    text: "Chcete s něčím začít nebo překonat stagnaci? Pomlůžu s tréninkovým plánem, kreativitou i sebevědomím.",
-    text2: <>Preferuji v tělocvičně <br/> 50/80 minut <br /> 850/1250 Kč </>,
+    text: <>Chcete s&nbsp;něčím začít nebo překonat stagnaci? Pomlůžu s&nbsp;tréninkovým plánem, kreativitou i&nbsp;sebevědomím.</>,
+    text2: <>Preferuji v&nbsp;tělocvičně <br/> 50/80 minut <br /> 850/1250 Kč </>,
     link: "/movement"
 }
 ]

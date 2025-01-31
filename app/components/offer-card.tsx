@@ -2,7 +2,7 @@ import React from "react";
 
 export type OfferCardProps = {
     title: string
-    text: string
+    text: string | React.ReactNode
     text2: string | React.ReactNode
     link: string
 }
