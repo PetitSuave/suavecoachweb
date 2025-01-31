@@ -112,7 +112,7 @@ export default function Page() {
                                 {/*    <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni*/}
                                 {/*</p>*/}
                             </div>
-                            <div className="md:w-2/3 flex-col md:m-3 ">
+                            <div className="md:w-2/3 flex-col md:m-3 mb-6">
                                 <ContactForm/>
                             </div>
                         </div>
