@@ -94,7 +94,7 @@ export default function Page() {
                         <div className=" mt-16 ml-6 md:ml-9 text-2xl font-medium tracking-tight">
                             Kontaktujte mě
                         </div>
-                        <div className="flex mx-auto flex-col md:flex-row md:m-3 ml-6 mr-9 md:mr-0 md:ml-0">
+                        <div className="flex mx-auto flex-col md:flex-row md:m-3 ml-6 mr-9 md:mr-0md:ml-6">
                             <div className="flex flex-col md:w-1/3 mt-3 md:m-6">
                                 <p className="mb-6">
                                     Kontaktovat mě můžete pomocí <br/> e-mailu nebo kontaktního formuláře.
