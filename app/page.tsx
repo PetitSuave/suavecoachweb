@@ -13,12 +13,12 @@ const cards = [{
     link: "/work"
 }, {
     title: "Koučink pro Život",
-    text: <>Pro běžné i&nbsp;težké životní situace, lifestylové změny, osobnostní či&nbsp;kariérní rozovoj nebo pomoc v&nbsp;rozhodování.</>,
+    text: <>Pro běžné i&nbsp;těžké životní situace, lifestylové změny, osobnostní či&nbsp;kariérní rozovoj nebo pomoc v&nbsp;rozhodování.</>,
     text2: <>Osobně i on-line<br/> 50/80 minut <br /> 600 - 1250 Kč </>,
     link: "/life"
 }, {
     title: "Koučink pro Pohyb",
-    text: <>Chcete s&nbsp;něčím začít nebo překonat stagnaci? Pomlůžu s&nbsp;tréninkovým plánem, kreativitou i&nbsp;sebevědomím.</>,
+    text: <>Chcete s&nbsp;něčím začít nebo překonat stagnaci? Pomůžu s&nbsp;tréninkovým plánem, kreativitou i&nbsp;sebevědomím.</>,
     text2: <>Preferuji v&nbsp;tělocvičně <br/> 50/80 minut <br /> 850/1250 Kč </>,
     link: "/movement"
 }
@@ -55,7 +55,7 @@ export default function Page() {
                             </h1>
                             <p>
                                 Absolvovala jsem výcvik "Integrativní kouč" akreditovaný MŠMT a získala praxi
-                                aplikováním koučovacího přístupu do firmeního i fitness prostředí.
+                                aplikováním koučovacího přístupu do firemního i fitness prostředí.
                             </p>
                             <p>
                                 Během své více než patnáctileté IT kariéry ve vedení lidí a jako osobní trenérka jsem v
@@ -97,13 +97,13 @@ export default function Page() {
                         <div className="flex mx-auto flex-col md:flex-row pr-3 md:m-3">
                             <div className="flex flex-col md:w-1/3 mt-3 md:m-6">
                                 <p className="mb-6">
-                                    Kontaktovat mě můžete pomocí e-mailu nebo kontaktního formuláře.
+                                    Kontaktovat mě můžete pomocí <br/> e-mailu nebo kontaktního formuláře.
                                 </p>
                                 <p className="mb-6 flex">
                                     <LuMail className="mt-1 mr-3"/> katerina@urban.coach
                                 </p>
                                 <p className="mb-6 flex">
-                                    <LuPhoneIncoming className="mr-3 size-10"/> Pokud se chete spojit po telefonu,
+                                    <LuPhoneIncoming className="mr-3 size-10"/> Pokud se chcete spojit po telefonu,
                                     vyplňte
                                     také telefonní číslo, případně navrhovaný
                                     čas. Nebo preferenci komunikace pomocí SMS.
