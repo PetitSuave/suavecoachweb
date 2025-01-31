@@ -78,7 +78,7 @@ export default function ContactForm() {
                     <span className="ml-2 font-light italic md:block md:ml-0 ">Odesláním tohoto formuláře udělujete souhlas ke zpracování Vašich osobních údajů za účelem reakce na Váš dotaz. Svůj souhlas můžete kdykoli odvolat.</span>
                 </form>
             ) : (
-                <p className="w-full text-center">Uspesne odeslano!</p>
+                <p className="w-full text-center">Úspěšně odesláno!</p>
             )}
 
         </>
