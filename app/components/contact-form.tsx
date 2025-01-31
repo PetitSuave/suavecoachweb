@@ -58,9 +58,6 @@ export default function ContactForm() {
                             Telefon
                             <span className="ml-2 font-light italic md:block md:ml-0">(volitelné)</span>
                         </label>
-                        {
-                            //TODO: Dalo by se sem tenkym pismem do zavorky napsat, ze je to volitelne? Nebo nejak jinak odlisit volitelne pole?
-                        }
                         <input
                             className="pl-2 border-2 border-indigo-900 w-full md:w-10/12"
                             type="tel" name="tel"/>
@@ -78,6 +75,7 @@ export default function ContactForm() {
                         className="rounded-none bg-black text-white p-2"
                         type="submit">Odeslat
                     </button>
+                    <span className="ml-2 font-light italic md:block md:ml-0">Odesláním tohoto formuláře udělujete souhlas k zpracování Vašich osobních údajů za účelem reakce na Váš dotaz. Svůj souhlas můžete kdykoli odvolat.</span>
                 </form>
             ) : (
                 <p className="w-full text-center">Uspesne odeslano!</p>
