@@ -7,16 +7,19 @@ import {LuMail, LuPhoneIncoming, LuReceiptEuro} from "react-icons/lu";
 import {ScreenWideSection} from "./components/screen-wide-section";
 
 const cards = [{
-    title: "Pro Kariéru",
-    text: "Vhodné pro firmy i individuální zakázky. Potřebujete kouče do firmy? Potřebuješ kariérní koučing?",
+    title: "Kafe s koučkou",
+    text: "Pojďme si nezávisle pokecat o tom, co ti koučink může přinést a jak nastavit naši spolupráci.",
+    text2: "30minut on-line sezení zdarna.",
     link: "/work"
 }, {
-    title: "Pro Život",
-    text: "Pro běžné i težké životní situace, lifestylové změny, osobnostní rozovoj nebo pomoc v rozhodování.",
+    title: "Koučink pro Život",
+    text: "Pro běžné i težké životní situace, lifestylové změny, osobnostní či kariérní rozovoj nebo pomoc v rozhodování.",
+    text2: "Osobně i on-line, cena od 600 do 1250 Kč",
     link: "/life"
 }, {
-    title: "Pro Pohyb",
-    text: "Rozvoj Vašich pohybových aktivit, efektivita tréninku, kreativita a překonávání překážek",
+    title: "Koučink pro Pohyb",
+    text: "Podpora a rozvoj pro začátečníky i zkušené sportovce ve výkonostních i uměleckých disciplínách. Překonání stagnace, rozvoj kreativity a sebevědomí.",
+    text2: "Preferuji osobně v tělocvičně, cena 850 Kč",
     link: "/movement"
 }
 ]
@@ -80,7 +83,7 @@ export default function Page() {
                 <div className="flex flex-col md:flex-row py-16">
                     {cards.map(card => (
                         <div key={card.title} className="w-full md:w-1/3">
-                            <OfferCard title={card.title} text={card.text} link={card.link}/>
+                            <OfferCard title={card.title} text={card.text} text2={card.text2} link={card.link}/>
                         </div>
                     ))}
                 </div>
