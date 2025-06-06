@@ -3,7 +3,7 @@ import { metaData } from "../config";
 
 const navItems = {
   // "/blog": { name: "Blog" },
-  "#contact": { name: "Kontakt" },
+  "/#contact": { name: "Kontakt" },
 };
 
 export function Navbar() {
