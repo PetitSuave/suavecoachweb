@@ -16,7 +16,7 @@ export function Navbar() {
             <p className="text-center text-base">{"Integrativní kouč pro tělo i mysl"}</p>
           </Link>
         </div>
-        <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
+        <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center justify-center">
           {Object.entries(navItems).map(([path, { name }]) => (
             <Link
               key={path}

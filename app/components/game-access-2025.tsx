@@ -1,18 +1,18 @@
-import {metaData, socialLinks} from "../config";
-import {ScreenWideSection} from "./screen-wide-section";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import {IconType} from "react-icons";
 import {LuFacebook, LuInstagram, LuLinkedin, LuMail} from "react-icons/lu";
+import {ScreenWideSection} from "./screen-wide-section";
+import {metaData, socialLinks} from "../config";
 
-const navItems = {
-  // "/blog": { name: "Blog" },
-  "#contact": { name: "Kontakt" },
-};
 
-function SocialLink({ href, icon: Icon }) {
+function SocialLink({ href, icon: Icon, text }: { href: string, icon: IconType, text?: string}) {
   return (
-      <a href={href} target="_blank" rel="noopener noreferrer">
-        <Icon />
+      <a href={href} target="_blank" rel="noopener noreferrer" className="no-underline">
+        <span className="flex flex-row gap-2 items-center">
+          <Icon />
+          {text}
+        </span>
       </a>
   );
 }
@@ -25,7 +25,6 @@ export function GameAccess2025() {
           <div className="-z-10 absolute inset-0 bg-orange-700" />
           <p className="text-3xl leading-tight font font-semibold mt-16 mb-16 mx-9 text-white">
             Game Access 2025: Mental Health in Game Development
-
           </p>
         </ScreenWideSection>
         <section className="relative">
@@ -40,7 +39,7 @@ export function GameAccess2025() {
                     Presentation download
                   </a>
                 </p>
-                <p>
+                <div>
                   Social media links:
                   <div className="flex text-lg gap-3.5 transition-opacity duration-300 hover:opacity-90">
                     <SocialLink href={socialLinks.instagram} icon={LuInstagram}/>
@@ -48,23 +47,24 @@ export function GameAccess2025() {
                     <SocialLink href={socialLinks.linkedin} icon={LuLinkedin}/>
                     <SocialLink href={socialLinks.email} icon={LuMail}/>
                   </div>
-                </p>
-                <p>
+                </div>
+                <div>
                   In case you like circus too, follow:
-                  <p>@fungus.circus
-                  <SocialLink href={socialLinks.funguscircus} icon={LuInstagram}/>
+                  <p>
+                     <SocialLink href={socialLinks.funguscircus} icon={LuInstagram} text={"@fungus.circus"}/>
                   </p>
                   <p>
-                  @petitsuave
-                  <SocialLink href={socialLinks.petitsuave} icon={LuInstagram}/>
+                    <SocialLink href={socialLinks.petitsuave} icon={LuInstagram} text={"@petitsuave"}/>
                   </p>
                   <p>
                     NVC book
-                    https://www.cnvc.org/store/nonviolent-communication-a-language-of-life
+                    <br/>
+                    <a href="https://www.cnvc.org/store/nonviolent-communication-a-language-of-life">https://www.cnvc.org/store/nonviolent-communication-a-language-of-life</a>
                   </p>
                   <p>
                     NVC in Brno (Prague, Ostrava, Zlin)
-                    https://nenasilnakomunikace.org/
+                    <br/>
+                    <a href="https://nenasilnakomunikace.org/" target="_blank">https://nenasilnakomunikace.org/</a>
                   </p>
                   <p>
                     Spheres of influence
@@ -78,10 +78,10 @@ export function GameAccess2025() {
                   <p>
                     Biases and integration
                   </p>
-                  <p>
-                    Complex situations: https://www.scribd.com/document/398866026/Changing-is-Standing-Still
+                  <p className="break-words">
+                    Complex situations: <a href="https://www.scribd.com/document/398866026/Changing-is-Standing-Still" target="_blank">https://www.scribd.com/document/398866026/Changing-is-Standing-Still</a>
                   </p>
-                </p>
+                </div>
               </div>
             </div>
             <div className="md:w-1/3 m-6">
@@ -92,7 +92,6 @@ export function GameAccess2025() {
             </div>
           </div>
         </section>
-
       </div>
   );
 }
