@@ -1,13 +1,22 @@
-import Link from "next/link";
-import { metaData } from "../config";
+import {metaData, socialLinks} from "../config";
 import {ScreenWideSection} from "./screen-wide-section";
 import Image from "next/image";
 import React from "react";
+import {LuFacebook, LuInstagram, LuLinkedin, LuMail} from "react-icons/lu";
 
 const navItems = {
   // "/blog": { name: "Blog" },
   "#contact": { name: "Kontakt" },
 };
+
+function SocialLink({ href, icon: Icon }) {
+  return (
+      <a href={href} target="_blank" rel="noopener noreferrer">
+        <Icon />
+      </a>
+  );
+}
+
 
 export function GameAccess2025() {
   return (
@@ -27,16 +36,51 @@ export function GameAccess2025() {
                   Sources to get more from the presentation:
                 </h1>
                 <p>
-                  You can downloud the slides here:
+                  <a href={"https://drive.google.com/file/d/1Mz1SKIZhUrLkg-qMB3vwC4w1zTfo07cD/view?usp=drive_link"} target="_blank" rel="noopener noreferrer">
+                    Presentation download
+                  </a>
                 </p>
                 <p>
-                  Během své více než patnáctileté IT kariéry ve vedení lidí a jako osobní trenérka jsem v
-                  koučinku našla přístup, který je v souladu s mými vnitřními hodnotami. Umožňuje mi
-                  pomáhat lidem rozvíjejícím přísupem a respektovat jejich jedinečnost a kompetenci pro
-                  sebe udělat to nejlepší.
+                  Social media links:
+                  <div className="flex text-lg gap-3.5 transition-opacity duration-300 hover:opacity-90">
+                    <SocialLink href={socialLinks.instagram} icon={LuInstagram}/>
+                    <SocialLink href={socialLinks.facebook} icon={LuFacebook}/>
+                    <SocialLink href={socialLinks.linkedin} icon={LuLinkedin}/>
+                    <SocialLink href={socialLinks.email} icon={LuMail}/>
+                  </div>
                 </p>
                 <p>
-                  Mojí nejoblíbenější oblastí je navrácení koučinku zpátky k pohybovým disciplínám.
+                  In case you like circus too, follow:
+                  <p>@fungus.circus
+                  <SocialLink href={socialLinks.funguscircus} icon={LuInstagram}/>
+                  </p>
+                  <p>
+                  @petitsuave
+                  <SocialLink href={socialLinks.petitsuave} icon={LuInstagram}/>
+                  </p>
+                  <p>
+                    NVC book
+                    https://www.cnvc.org/store/nonviolent-communication-a-language-of-life
+                  </p>
+                  <p>
+                    NVC in Brno (Prague, Ostrava, Zlin)
+                    https://nenasilnakomunikace.org/
+                  </p>
+                  <p>
+                    Spheres of influence
+                  </p>
+                  <p>
+                    Zdroj solution koucing = delej vic co funguje a méně co nefunguje
+                  </p>
+                  <p>
+                    5 elements of habit
+                  </p>
+                  <p>
+                    Biases and integration
+                  </p>
+                  <p>
+                    Complex situations: https://www.scribd.com/document/398866026/Changing-is-Standing-Still
+                  </p>
                 </p>
               </div>
             </div>
