@@ -90,7 +90,7 @@ export function GameAccess2025() {
                   <p>
                     <b>Urgency addiction</b>
                     <br/>
-                    <SocialLink href={socialLinks.funguscircus} icon={LuInstagram} text={"@the.holistic.psychologist"}/>
+                    <SocialLink href={socialLinks.holisticpsychologist} icon={LuInstagram} text={"@the.holistic.psychologist"}/>
                   </p>
                 </div>
               </div>
