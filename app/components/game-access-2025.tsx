@@ -40,7 +40,7 @@ export function GameAccess2025() {
                   </a>
                 </p>
                 <div>
-                  Social media links:
+                  <b>Social media links:</b>
                   <div className="flex text-lg gap-3.5 transition-opacity duration-300 hover:opacity-90">
                     <SocialLink href={socialLinks.instagram} icon={LuInstagram}/>
                     <SocialLink href={socialLinks.facebook} icon={LuFacebook}/>
@@ -48,38 +48,49 @@ export function GameAccess2025() {
                     <SocialLink href={socialLinks.email} icon={LuMail}/>
                   </div>
                 </div>
-                <div>
+                <div><p>
                   In case you like circus too, follow:
+                  <SocialLink href={socialLinks.funguscircus} icon={LuInstagram} text={"@fungus.circus"}/>
+                  <SocialLink href={socialLinks.petitsuave} icon={LuInstagram} text={"@petitsuave"}/>
+                </p>
                   <p>
-                     <SocialLink href={socialLinks.funguscircus} icon={LuInstagram} text={"@fungus.circus"}/>
-                  </p>
-                  <p>
-                    <SocialLink href={socialLinks.petitsuave} icon={LuInstagram} text={"@petitsuave"}/>
-                  </p>
-                  <p>
-                    NVC book
+                    <b>NVC book</b>
                     <br/>
-                    <a href="https://www.cnvc.org/store/nonviolent-communication-a-language-of-life">https://www.cnvc.org/store/nonviolent-communication-a-language-of-life</a>
-                  </p>
-                  <p>
-                    NVC in Brno (Prague, Ostrava, Zlin)
+                    <a href="https://www.cnvc.org/store/nonviolent-communication-a-language-of-life">Nonviolent
+                      Communication a Language of Life</a>
                     <br/>
-                    <a href="https://nenasilnakomunikace.org/" target="_blank">https://nenasilnakomunikace.org/</a>
+                    <a href="https://www.databazeknih.cz/knihy/nenasilna-komunikace-292886">Český překlad: Nenásilná
+                      komunikace</a>
                   </p>
                   <p>
-                    Spheres of influence
-                  </p>
-                  <p>
-                    Zdroj solution koucing = delej vic co funguje a méně co nefunguje
-                  </p>
-                  <p>
-                    5 elements of habit
-                  </p>
-                  <p>
-                    Biases and integration
+                    <b>NVC in Brno (Prague, Ostrava, Zlín)</b>
+                    <br/>
+                    <a href="https://nenasilnakomunikace.org/" target="_blank">nenasilnakomunikace.org</a>
                   </p>
                   <p className="break-words">
-                    Complex situations: <a href="https://www.scribd.com/document/398866026/Changing-is-Standing-Still" target="_blank">https://www.scribd.com/document/398866026/Changing-is-Standing-Still</a>
+                    <b>Complex situations book:</b>
+                    <br/>
+                    <a href="https://www.scribd.com/document/398866026/Changing-is-Standing-Still" target="_blank">
+                      Changing is Standing still: A Gestalt Perspective on Organizations</a>
+                    <br/>
+                    <a href="https://www.databazeknih.cz/knihy/zmena-prijde-kdyz-se-zastavis-281414" target="_blank">Český
+                      překlad: Změna přijde, když se zastavíš</a>
+                  </p>
+                  <p>
+                    <b>5 elements of habit (the circle diagram)</b>
+                    <br/>
+                    Author: <a href="https://www.linkedin.com/in/jana-myn%C3%A1%C5%99ov%C3%A1-43404a95/">Jana
+                    Mynářová</a> based on the book:
+                    <br/>
+                    <a href="https://www.goodreads.com/book/show/7533333-the-mindful-coach">The Mindful Coach</a>
+                    <br/>
+                    <a href="https://www.databazeknih.cz/knihy/vsimavy-kouc-210854" target="_blank">Český překlad:
+                      Všímavý Kouč</a>
+                  </p>
+                  <p>
+                    <b>Urgency addiction</b>
+                    <br/>
+                    <SocialLink href={socialLinks.funguscircus} icon={LuInstagram} text={"@the.holistic.psychologist"}/>
                   </p>
                 </div>
               </div>

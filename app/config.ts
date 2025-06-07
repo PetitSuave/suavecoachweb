@@ -14,6 +14,7 @@ export const socialLinks = {
   instagram: "https://www.instagram.com/suave.movement/",
   petitsuave: "https://www.instagram.com/petitsuave/",
   funguscircus: "https://www.instagram.com/fungus.circus/",
+  holisticpsychologist: "https://www.instagram.com/the.holistic.psychologist/",
   facebook: "https://www.facebook.com/SuaveMovement/",
   linkedin: "https://cz.linkedin.com/in/katerina-urbanova",
   email: "mailto:katerina@urban.coach",
