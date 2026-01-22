@@ -33,20 +33,28 @@ export default function Page() {
                    className="-z-10 object-bottom object-cover filter brightness-75"
                     src={"/photos/neuron.png"} alt={"Neurons"} fill
                 />}>
-                <div className="text-center">
-                    <p className="text-xl font font-semibold leading-[0]">
-                        Společně vytvoříme cestu, která bude skutečně tvoje.
-                        {
-                            //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
-                        }
-                    </p>
-                    <div className=" text-6xl leading-[0] font-extrabold">
-                        <p className="mb-0">Kateřina</p>
-                        <p>Urbanová</p>
+                <div className="flex flex-col md:flex-row items-center">
+                    <div className="md:w-2/3 text-center md:text-left">
+                        <p className="text-xl font font-semibold leading-[0]">
+                            Společně vytvoříme cestu, která bude skutečně tvoje.
+                            {
+                                //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
+                            }
+                        </p>
+                        <div className=" text-6xl leading-[0] font-extrabold">
+                            <p className="mb-0">Kateřina</p>
+                            <p>Urbanová</p>
+                        </div>
+                        <p className=" text-xl font font-semibold leading-[0]">
+                            {"Integrativní kouč pro tělo i mysl"}
+                        </p>
                     </div>
-                    <p className=" text-xl font font-semibold leading-[0]">
-                        {"Integrativní kouč pro tělo i mysl"}
-                    </p>
+                    <div className="md:w-1/3 mt-6 md:mt-0">
+                        <Image src="/photos/tmp_ProfilePicture.jpg" alt={metaData.name}
+                               width={672} height={672}
+                               className="rounded-full sm:max-w-96 mx-auto md:max-w-full"
+                        />
+                    </div>
                 </div>
             </ScreenWideSection>
             <section className="relative">
@@ -73,12 +81,6 @@ export default function Page() {
                                 Mojí nejoblíbenější oblastí je navrácení koučinku zpátky k pohybovým disciplínám.
                             </p>
                         </div>
-                    </div>
-                    <div className="md:w-1/3 m-6">
-                        <Image src="/photos/tmp_ProfilePicture.jpg" alt={metaData.name}
-                               width={672} height={672}
-                               className="rounded-full sm:max-w-96 mx-auto md:max-w-full"
-                        />
                     </div>
                 </div>
             </section>
