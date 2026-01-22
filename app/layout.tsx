@@ -82,9 +82,9 @@ export default function RootLayout({
             />
         </head>
         <body className={cx(
-            "antialiased flex flex-col items-center justify-center mx-auto mt-0 lg:mt-3 bg-gradient-to-b from-violet-dust to-teal-dust text-primary-text",
+            "antialiased flex items-center justify-center mx-auto mt-0 lg:mt-3 bg-gradient-to-b from-violet-dust to-teal-dust text-primary-text",
             montserrat.className
-        )}>        <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[960px] w-full">
+        )}>        <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col max-w-[960px] w-full mx-auto">
             <Navbar/>
             {children}
             <Footer/>

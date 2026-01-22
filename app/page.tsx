@@ -26,16 +26,16 @@ const cards = [{
 
 export default function Page() {
     return (
-        <div className="relative min-h-screen prose prose-neutral dark:prose-invert">
+        <div className="relative min-h-screen prose">
             {/*<ScreenWideSection*/}
             {/*    background={*/}
             {/*    <Image*/}
             {/*       className="-z-10 object-bottom object-cover filter brightness-75"*/}
             {/*        src={"/photos/neuron.png"} alt={"Neurons"} fill*/}
             {/*    />}>*/}
-            <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-2/3 text-center md:text-left">
-                    <p className="text-xl font font-semibold leading-[0]">
+            <div className="flex md:flex-row items-center w-full">
+                <div className="md:w-2/3 text-center md:text-left w-full">
+                    <p className="text-xl font font-semibold">
                         Společně vytvoříme cestu, která bude skutečně tvoje.
                         {
                             //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
@@ -49,7 +49,7 @@ export default function Page() {
                         {"Integrativní kouč pro tělo i mysl"}
                     </p>
                 </div>
-                <div className="md:w-1/3 mt-6 md:mt-0">
+                <div className="md:w-1/3 mt-6 md:mt-0 w-full">
                     <Image src="/photos/tmp_ProfilePicture.jpg" alt={metaData.name}
                            width={672} height={672}
                            className="rounded-full sm:max-w-96 mx-auto md:max-w-full"
@@ -58,17 +58,20 @@ export default function Page() {
             </div>
             {/*</ScreenWideSection>*/}
             <section className="relative">
-                    <div className="flex flex-col-reverse md:flex-row py-16 gap-x-2">
-                        {cards.map(card => (
-                            <div key={card.title} className="w-full md:w-1/3">
-                                <OfferCard title={card.title} text={card.text} text2={card.text2} link={card.link}/>
-                            </div>
-                        ))}
-                    </div>
+            <div className="w-full max-w-[960px] mx-auto">
+                <div className="flex md:flex-row py-16 gap-x-2 w-full">
+                    {cards.map(card => (
+                        <div key={card.title} className="w-full md:w-1/3">
+                            <OfferCard title={card.title} text={card.text} text2={card.text2} link={card.link}/>
+                        </div>
+                    ))}
+                </div>
+            </div>
             </section>
             <section className="relative">
-                <div className="flex mt-12 mb-12 mx-auto flex-col-reverse md:flex-row ">
-                    <div className="flex md:flex-row md:w-2/3 flex-col md:ml-9 mb-9">
+            <div className="w-full max-w-[960px] mx-auto">
+                <div className="flex mt-12 mb-12 md:flex-row w-full">
+                    <div className="flex md:flex-row md:w-2/3 md:ml-9 mb-9 w-full">
                         <div>
                             <h1 className="mb-12 text-2xl font-medium tracking-tight">
                                 Kdo jsem?
@@ -92,34 +95,33 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
+            </div>
             </section>
             <section className="relative" id="contact">
-                <div className="">
-                    <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
-                        <div className=" mt-16 ml-6 md:ml-9 text-2xl font-medium tracking-tight">
-                            Kontaktujte mě
+                <div className="w-full max-w-[960px] mx-auto">
+                    <div className=" mt-16 ml-6 md:ml-9 text-2xl font-medium tracking-tight">
+                        Kontaktujte mě
+                    </div>
+                    <div className="flex mx-auto md:flex-row md:m-3 ml-6 mr-9 md:mr-0md:ml-6 w-full">
+                        <div className="flex flex-col md:w-1/3 mt-3 md:m-6 w-full">
+                            <p className="mb-6">
+                                Kontaktovat mě můžete pomocí <br/> e-mailu nebo kontaktního formuláře.
+                            </p>
+                            <p className="mb-6 flex">
+                                <LuMail className="mt-1 mr-3"/> katerina@urban.coach
+                            </p>
+                            <p className="mb-6 flex">
+                                <LuPhoneIncoming className="mr-3 size-10"/> Pokud se chcete spojit po telefonu,
+                                vyplňte
+                                také telefonní číslo, případně navrhovaný
+                                čas. Nebo preferenci komunikace pomocí SMS.
+                            </p>
+                            {/*<p className="mb-6 flex">*/}
+                            {/*    <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni*/}
+                            {/*</p>*/}
                         </div>
-                        <div className="flex mx-auto flex-col md:flex-row md:m-3 ml-6 mr-9 md:mr-0md:ml-6">
-                            <div className="flex flex-col md:w-1/3 mt-3 md:m-6">
-                                <p className="mb-6">
-                                    Kontaktovat mě můžete pomocí <br/> e-mailu nebo kontaktního formuláře.
-                                </p>
-                                <p className="mb-6 flex">
-                                    <LuMail className="mt-1 mr-3"/> katerina@urban.coach
-                                </p>
-                                <p className="mb-6 flex">
-                                    <LuPhoneIncoming className="mr-3 size-10"/> Pokud se chcete spojit po telefonu,
-                                    vyplňte
-                                    také telefonní číslo, případně navrhovaný
-                                    čas. Nebo preferenci komunikace pomocí SMS.
-                                </p>
-                                {/*<p className="mb-6 flex">*/}
-                                {/*    <LuReceiptEuro className="mt-1 mr-3"/> Bankovni spojeni*/}
-                                {/*</p>*/}
-                            </div>
-                            <div className="md:w-2/3 flex-col md:m-3 mb-6">
-                                <ContactForm/>
-                            </div>
+                        <div className="md:w-2/3 md:m-3 mb-6 w-full">
+                            <ContactForm/>
                         </div>
                     </div>
                 </div>
