@@ -20,10 +20,10 @@ function SocialLink({ href, icon: Icon, text }: { href: string, icon: IconType, 
 
 export function GameAccess2025() {
   return (
-      <div className="relative min-h-screen">
+      <div className="relative min-h-screen ">
         <ScreenWideSection >
-          <div className="-z-10 absolute inset-0 bg-orange-700" />
-          <p className="text-3xl leading-tight font font-semibold mt-16 mb-16 mx-9 text-white">
+          <div className="-z-10 absolute inset-0 bg-primary-text" />
+          <p className="text-3xl leading-tight font font-semibold mt-16 mb-16 mx-9 text-violet-dust">
             Game Access 2025: Mental Health in Game Development
           </p>
         </ScreenWideSection>
