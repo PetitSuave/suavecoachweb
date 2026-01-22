@@ -83,6 +83,10 @@ export default function Page() {
                         <p className="text-4xl font-bold">Kafe s koučkou</p>
                         <p> Pojďme se setkat on-line a nezávisle pokecat o&nbsp;tom, co ti koučink může přinést a&nbsp;jak nastavit naši spolupráci. </p>
                         <p className="text-3xl font-bold"> 30 minut zdarma </p>
+                        <button
+                            className="rounded-none bg-violet-dust p-2 font-bold"
+                            type="submit">Domluvit schůzku
+                        </button>
                     </div>
                 </div>
             </section>
