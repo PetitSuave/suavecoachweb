@@ -61,7 +61,8 @@ export default function Page() {
             <div className="w-full max-w-[960px] mx-auto">
                 <div className="flex md:flex-row py-16 gap-x-2 w-full">
                     {cards.map(card => (
-                        <div key={card.title} className="w-full md:w-1/3">
+                        /* TODO zkomentovanz kez nevim kc emu byl le nemuye mit ted uy sloyitz text*/
+                        <div /* key={card.title}*/ className="w-full md:w-1/3">
                             <OfferCard title={card.title} text={card.text} text2={card.text2} link={card.link}/>
                         </div>
                     ))}
