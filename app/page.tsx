@@ -86,7 +86,8 @@ export default function Page() {
                         <p className="text-3xl font-bold"> 30 minut zdarma </p>
                         <Link href="#contact">
                         <button
-                            className="rounded-none bg-violet-dust p-2 font-bold"
+                            /* TODO: tohle pak udelat v global a vyresit s ashoborne page at to tu nemusi bytnatvrdo */
+                            className="rounded-none bg-violet-dust text-primary-text p-2 font-bold w-full"
                             type="submit">Domluvit schůzku
                         </button>
                         </Link>
