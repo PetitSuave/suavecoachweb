@@ -27,50 +27,44 @@ const cards = [{
 export default function Page() {
     return (
         <div className="relative min-h-screen prose prose-neutral dark:prose-invert">
-            <ScreenWideSection
-                background={
-                <Image
-                   className="-z-10 object-bottom object-cover filter brightness-75"
-                    src={"/photos/neuron.png"} alt={"Neurons"} fill
-                />}>
-                <div className="flex flex-col md:flex-row items-center">
-                    <div className="md:w-2/3 text-center md:text-left">
-                        <p className="text-xl font font-semibold leading-[0]">
-                            Společně vytvoříme cestu, která bude skutečně tvoje.
-                            {
-                                //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
-                            }
-                        </p>
-                        <div className=" text-6xl leading-[0] font-extrabold">
-                            <p className="mb-0">Kateřina</p>
-                            <p>Urbanová</p>
-                        </div>
-                        <p className=" text-xl font font-semibold leading-[0]">
-                            {"Integrativní kouč pro tělo i mysl"}
-                        </p>
+            {/*<ScreenWideSection*/}
+            {/*    background={*/}
+            {/*    <Image*/}
+            {/*       className="-z-10 object-bottom object-cover filter brightness-75"*/}
+            {/*        src={"/photos/neuron.png"} alt={"Neurons"} fill*/}
+            {/*    />}>*/}
+            <div className="flex flex-col md:flex-row items-center">
+                <div className="md:w-2/3 text-center md:text-left">
+                    <p className="text-xl font font-semibold leading-[0]">
+                        Společně vytvoříme cestu, která bude skutečně tvoje.
+                        {
+                            //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
+                        }
+                    </p>
+                    <div className=" text-6xl leading-[0] font-extrabold">
+                        <p className="mb-0">Kateřina</p>
+                        <p>Urbanová</p>
                     </div>
-                    <div className="md:w-1/3 mt-6 md:mt-0">
-                        <Image src="/photos/tmp_ProfilePicture.jpg" alt={metaData.name}
-                               width={672} height={672}
-                               className="rounded-full sm:max-w-96 mx-auto md:max-w-full"
-                        />
-                    </div>
+                    <p className=" text-xl font font-semibold leading-[0]">
+                        {"Integrativní kouč pro tělo i mysl"}
+                    </p>
                 </div>
-            </ScreenWideSection>
+                <div className="md:w-1/3 mt-6 md:mt-0">
+                    <Image src="/photos/tmp_ProfilePicture.jpg" alt={metaData.name}
+                           width={672} height={672}
+                           className="rounded-full sm:max-w-96 mx-auto md:max-w-full"
+                    />
+                </div>
+            </div>
+            {/*</ScreenWideSection>*/}
             <section className="relative">
-                <ScreenWideSection
-                    /*  background={<Image
-                   className="-z-10 object-center object-cover"
-                    src={"/photos/bg-forest-sharp-thin.jpg"} alt={"Calm Forest"} fill
-                />}*/>
-                    <div className="flex flex-col md:flex-row py-16 gap-x-2">
+                    <div className="flex flex-col-reverse md:flex-row py-16 gap-x-2">
                         {cards.map(card => (
                             <div key={card.title} className="w-full md:w-1/3">
                                 <OfferCard title={card.title} text={card.text} text2={card.text2} link={card.link}/>
                             </div>
                         ))}
                     </div>
-                </ScreenWideSection>
             </section>
             <section className="relative">
                 <div className="flex mt-12 mb-12 mx-auto flex-col-reverse md:flex-row ">
@@ -99,7 +93,7 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <section className="relative w-screen -ml-[calc(50vw-50%)]" id="contact">
+            <section className="relative" id="contact">
                 <div className="">
                     <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
                         <div className=" mt-16 ml-6 md:ml-9 text-2xl font-medium tracking-tight">

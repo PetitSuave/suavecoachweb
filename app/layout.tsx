@@ -12,7 +12,7 @@ import { Montserrat } from 'next/font/google';
 const montserrat = Montserrat({
     subsets: ['latin'],
     display: 'swap',
-    variable: '--font-montserrat', // Tohle vytvoří CSS proměnnou
+    variable: '--font-montserrat',
 });
 
 export const metadata: Metadata = {
