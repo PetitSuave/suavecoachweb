@@ -47,14 +47,16 @@ body {
 
 .prose {
   @apply text-[#d8c348] dark:text-[#d8c348] font-[Montserrat];
+  width: 100%;
+  max-width: none;
 }
 
 .prose .anchor {
   @apply absolute invisible no-underline;
   margin-left: -1em;
   padding-right: 0.5em;
-  width: 80%;
-  max-width: 960px;
+  width: 100%;
+  max-width: none;
   cursor: pointer;
 }
 
