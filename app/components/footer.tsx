@@ -17,7 +17,7 @@ function SocialLink({ href, icon: Icon }) {
 
 function SocialLinks() {
   return (
-    <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90 text-[#4a4469]">
+    <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90 text-violet-dust">
       <SocialLink href={socialLinks.instagram} icon={LuInstagram} />
       <SocialLink href={socialLinks.facebook} icon={LuFacebook} />
       <SocialLink href={socialLinks.linkedin} icon={LuLinkedin} />
@@ -28,7 +28,7 @@ function SocialLinks() {
 
 export default function Footer() {
   return (
-      <ScreenWideSection background={<div className="absolute w-full h-full -z-10 text-[#4a4469] " />}>
+      <ScreenWideSection background={<div className="absolute w-full h-full -z-10 text-violet-dust " />}>
           <small className="block lg:pt-16 pt-12 pb-12 lg:pb-16 md:ml-9 ml-6 mr-6">
               <time>© {YEAR}</time>
               {" "}

@@ -72,7 +72,7 @@ export default function ContactForm() {
                             name="message" required/>
                     </div>
                     <button
-                        className="rounded-none bg-[#4a4469] text-[#d8c348] p-2 font-bold"
+                        className="rounded-none bg-violet-dust p-2 font-bold"
                         type="submit">Odeslat
                     </button>
                     <span className="ml-2 font-light italic md:block md:ml-0 ">Odesláním tohoto formuláře udělujete souhlas ke zpracování Vašich osobních údajů za účelem reakce na Váš dotaz. Svůj souhlas můžete kdykoli odvolat.</span>
@@ -82,7 +82,7 @@ export default function ContactForm() {
                     <p className="w-full">Úspěšně odesláno!</p>
                     <button
                         onClick={() => setSubmitted(false)}
-                        className="mt-6 w-full max-w-xs rounded-none bg-black text-[#d8c348] p-2 hover:bg-gray-600"
+                        className="mt-6 w-full max-w-xs rounded-none bg-black p-2 hover:bg-gray-600"
                     >
                         Nový dotaz
                     </button>

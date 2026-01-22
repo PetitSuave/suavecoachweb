@@ -18,7 +18,7 @@ This document outlines guidelines and best practices for AI agents working with 
 
 ## Core Technologies
 
--   **Framework**: Next.js (App Router)
+-   **Framework**: Next.js 14.2 (App Router)
 -   **Language**: TypeScript
 -   **Styling**: Tailwind CSS
 -   **Content**: MDX
