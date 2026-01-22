@@ -62,8 +62,9 @@ body {
   @apply visible;
 }
 
+/*TODO: these color work for asborne game acces page, need to be change to fit main page */
 .prose a {
-  @apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em] font-normal text-[#333333] dark:text-[#D4D4D4];
+  @apply transition-all decoration-yellow-200 dark:decoration-orange-400 underline-offset-2 decoration-[0.1em] font-normal text-yellow-600 dark:text-orange-400;
 }
 
 .prose a:hover {
