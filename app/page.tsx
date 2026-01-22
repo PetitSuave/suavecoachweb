@@ -7,18 +7,18 @@ import {LuMail, LuPhoneIncoming, LuReceiptEuro} from "react-icons/lu";
 import {ScreenWideSection} from "./components/screen-wide-section";
 
 const cards = [{
-    title: "Kariérní koučink",
-    text: <>Pro běžné i&nbsp;těžké životní situace, lifestylové změny, osobnostní či&nbsp;kariérní rozovoj nebo pomoc v&nbsp;rozhodování.</>,
+    title: <>Chystáš se na kariérní změnu nebo se chceš někam posunout v&nbsp;práci?</>,
+    text: <>Pomůžu ti nahlédnout na situaci z&nbsp;nových perspektiv. Projdeme spolu bilanční i&nbsp;rozhodovací procesy a&nbsp;najdeme tu pravou cestu právě pro tebe.</>,
     text2: <>Osobně i on-line<br/> 50/80 minut <br /> 600 - 1250 Kč </>,
     link: "/work"
 }, {
-    title: "Koučink pro Život",
-    text: <>Pro běžné i&nbsp;těžké životní situace, lifestylové změny, osobnostní či&nbsp;kariérní rozovoj nebo pomoc v&nbsp;rozhodování.</>,
+    title: <>Nacházíš se v těžké životní situaci nebo cítíš, že chceš udělat změnu?</>,
+    text: <>Povedeme spolu rozhovor, který ti umožní oběvit hlubší důvody a&nbsp;potřeby, nalézt své silné stránky a&nbsp;využít svých schopností tam, kde potřebuješ.</>,
     text2: <>Osobně i on-line<br/> 50/80 minut <br /> 600 - 1250 Kč </>,
     link: "/life"
 }, {
-    title: "Koučink pro Pohyb",
-    text: <>Chcete s&nbsp;něčím začít nebo překonat stagnaci? Pomůžu s&nbsp;tréninkovým plánem, kreativitou i&nbsp;sebevědomím.</>,
+    title: <>Chceš se začít hýbat nebo pomoct překonat stagnaci ve sportu nebo tanci?</>,
+    text: <>Vymyslíme spolu tvůj unikátní a&nbsp;udržitelný plán! Pomůžu ti také s&nbsp;kreativitou a&nbsp;sebevědomím a&nbsp;překonávmím překážek.</>,
     text2: <>Preferuji v&nbsp;tělocvičně <br/> 50/80 minut <br /> 850/1250 Kč </>,
     link: "/movement"
 }
