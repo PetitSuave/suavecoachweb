@@ -58,6 +58,21 @@ export default function Page() {
                 </div>
             </ScreenWideSection>
             <section className="relative">
+                <ScreenWideSection
+                    /*  background={<Image
+                   className="-z-10 object-center object-cover"
+                    src={"/photos/bg-forest-sharp-thin.jpg"} alt={"Calm Forest"} fill
+                />}*/>
+                    <div className="flex flex-col md:flex-row py-16 gap-x-2">
+                        {cards.map(card => (
+                            <div key={card.title} className="w-full md:w-1/3">
+                                <OfferCard title={card.title} text={card.text} text2={card.text2} link={card.link}/>
+                            </div>
+                        ))}
+                    </div>
+                </ScreenWideSection>
+            </section>
+            <section className="relative">
                 <div className="flex mt-12 mb-12 mx-auto flex-col-reverse md:flex-row ">
                     <div className="flex md:flex-row md:w-2/3 flex-col md:ml-9 mb-9">
                         <div>
@@ -84,19 +99,6 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <ScreenWideSection
-                /*  background={<Image
-               className="-z-10 object-center object-cover"
-                src={"/photos/bg-forest-sharp-thin.jpg"} alt={"Calm Forest"} fill
-            />}*/>
-                <div className="flex flex-col md:flex-row py-16">
-                    {cards.map(card => (
-                        <div key={card.title} className="w-full md:w-1/3">
-                            <OfferCard title={card.title} text={card.text} text2={card.text2} link={card.link}/>
-                        </div>
-                    ))}
-                </div>
-            </ScreenWideSection>
             <section className="relative w-screen -ml-[calc(50vw-50%)]" id="contact">
                 <div className="">
                     <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">

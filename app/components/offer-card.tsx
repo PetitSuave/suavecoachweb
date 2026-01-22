@@ -9,7 +9,7 @@ export type OfferCardProps = {
 
 export function OfferCard({title, text, text2, link}: OfferCardProps) {
     return (
-        <div>
+        <div className="border-2 border-primary-text rounded-lg p-3 flex flex-col justify-start h-full">
             <div className="text-center mt-3 font-bold">
                 {title}
             </div>
