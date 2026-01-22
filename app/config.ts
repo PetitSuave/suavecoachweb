@@ -19,3 +19,5 @@ export const socialLinks = {
   linkedin: "https://cz.linkedin.com/in/katerina-urbanova",
   email: "mailto:katerina@urban.coach",
 };
+
+

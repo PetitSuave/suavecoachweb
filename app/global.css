@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,6 +19,8 @@
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
 }
 
 /* Dark theme colors */
@@ -38,8 +41,12 @@ html {
   min-width: 360px;
 }
 
+body {
+  font-family: var(--font-montserrat), sans-serif !important;
+}
+
 .prose {
-  @apply text-[#333333] dark:text-[#D4D4D4];
+  @apply text-[#d8c348] dark:text-[#d8c348] font-[Montserrat];
 }
 
 .prose .anchor {
@@ -95,12 +102,13 @@ html {
   @apply m-0;
 }
 
-.prose h2,
+.prose h1,
+h2,
 h3,
 h4,
 h5,
 h6 {
-  @apply font-medium tracking-tight !important;
+  @apply font-medium tracking-tight text-[#d8c348] !important;
 }
 
 .prose strong {

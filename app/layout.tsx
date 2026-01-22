@@ -7,6 +7,13 @@ import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import {metaData} from "./config";
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+    subsets: ['latin'],
+    display: 'swap',
+    variable: '--font-montserrat', // Tohle vytvoří CSS proměnnou
+});
 
 export const metadata: Metadata = {
     metadataBase: new URL(metaData.baseUrl),
@@ -52,7 +59,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
+        <html lang="en" className={cx(GeistSans.variable, GeistMono.variable, montserrat.variable)}>
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <link
@@ -74,8 +81,10 @@ export default function RootLayout({
                 title="JSON Feed"
             />
         </head>
-        <body className="antialiased flex flex-col items-center justify-center mx-auto mt-0 lg:mt-3 bg-amber-50">
-        <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[960px] w-full">
+        <body className={cx(
+            "antialiased flex flex-col items-center justify-center mx-auto mt-0 lg:mt-3 bg-gradient-to-b from-[#4a4469] to-[#2f8f94]",
+            montserrat.className
+        )}>        <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[960px] w-full">
             <Navbar/>
             {children}
             <Footer/>

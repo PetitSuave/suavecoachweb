@@ -30,7 +30,7 @@ export default function ContactForm() {
     }
 
     return (
-        <>
+        <div className="prose">
             {!submitted ? (
                 <form
                     className="flex flex-col space-y-4"
@@ -40,7 +40,7 @@ export default function ContactForm() {
                             className="mr-2 font-bold md:w-2/12"
                             htmlFor="name">Jméno</label>
                         <input
-                            className="pl-2 border-2 border-indigo-900 w-full md:w-10/12"
+                            className="pl-2 border-2 w-full md:w-10/12"
                             type="text" name="name" required/>
                     </div>
                     <div className="flex md:space-x-4 flex-col md:flex-row">
@@ -48,7 +48,7 @@ export default function ContactForm() {
                             className="mr-2 font-bold md:w-2/12"
                             htmlFor="email">E-mail</label>
                         <input
-                            className="pl-2 border-2 border-indigo-900 w-full md:w-10/12"
+                            className="pl-2 border-2  w-full md:w-10/12"
                             type="email" name="email" required/>
                     </div>
                     <div className="flex md:space-x-4 flex-col md:flex-row">
@@ -59,7 +59,7 @@ export default function ContactForm() {
                             <span className="ml-2 font-light italic md:block md:ml-0">(volitelné)</span>
                         </label>
                         <input
-                            className="pl-2 border-2 border-indigo-900 w-full md:w-10/12"
+                            className="pl-2 border-2  w-full md:w-10/12"
                             type="tel" name="tel"/>
                     </div>
                     <div className="flex flex-col mb-4">
@@ -67,12 +67,12 @@ export default function ContactForm() {
                             className="font-bold"
                             htmlFor="message">Váš dotaz</label>
                         <textarea
-                            className="p-2 border-2 border-indigo-900"
+                            className="p-2 border-2 "
                             rows={6}
                             name="message" required/>
                     </div>
                     <button
-                        className="rounded-none bg-black text-white p-2"
+                        className="rounded-none bg-[#4a4469] text-[#d8c348] p-2 font-bold"
                         type="submit">Odeslat
                     </button>
                     <span className="ml-2 font-light italic md:block md:ml-0 ">Odesláním tohoto formuláře udělujete souhlas ke zpracování Vašich osobních údajů za účelem reakce na Váš dotaz. Svůj souhlas můžete kdykoli odvolat.</span>
@@ -82,12 +82,12 @@ export default function ContactForm() {
                     <p className="w-full">Úspěšně odesláno!</p>
                     <button
                         onClick={() => setSubmitted(false)}
-                        className="mt-6 w-full max-w-xs rounded-none bg-black text-white p-2 hover:bg-gray-600"
+                        className="mt-6 w-full max-w-xs rounded-none bg-black text-[#d8c348] p-2 hover:bg-gray-600"
                     >
                         Nový dotaz
                     </button>
                 </div>
             )}
-        </>
+        </div>
     );
 }

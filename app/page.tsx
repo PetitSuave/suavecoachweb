@@ -26,27 +26,33 @@ const cards = [{
 
 export default function Page() {
     return (
-        <div className="relative min-h-screen">
-            {
-                //bg-purple-200 to section - tady ty barvicky zatim nebrat vazne, to jen chuc vdiet jak to vypada. musime vyresit na celou sirku stejne jak ma opredloha a navic tam bude obrazek}
-            }
+        <div className="relative min-h-screen prose prose-neutral dark:prose-invert">
             <ScreenWideSection
                 background={
                 <Image
-                    className="-z-10 object-bottom object-cover filter brightness-75"
-                    src={"/photos/bg-heather-cut-01.jpeg"} alt={"Flowers"} fill
+                   className="-z-10 object-bottom object-cover filter brightness-75"
+                    src={"/photos/neuron.png"} alt={"Neurons"} fill
                 />}>
-                <p className="text-3xl leading-tight font font-semibold mt-16 mb-16 mx-9 text-white">
-                    Společně vytvoříme cestu, která bude skutečně tvoje.
-                    {
-                        //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
-                    }
-                </p>
+                <div className="text-center">
+                    <p className="text-xl font font-semibold leading-[0]">
+                        Společně vytvoříme cestu, která bude skutečně tvoje.
+                        {
+                            //TODO: odsud by to chtelo odkaz na stranku, ktera bude vysvetlovat proc raw individualni kouicng - nebo mozna odkaz na konkretni bloc post o tomhle?
+                        }
+                    </p>
+                    <div className=" text-6xl leading-[0] font-extrabold">
+                        <p className="mb-0">Kateřina</p>
+                        <p>Urbanová</p>
+                    </div>
+                    <p className=" text-xl font font-semibold leading-[0]">
+                        {"Integrativní kouč pro tělo i mysl"}
+                    </p>
+                </div>
             </ScreenWideSection>
             <section className="relative">
                 <div className="flex mt-12 mb-12 mx-auto flex-col-reverse md:flex-row ">
                     <div className="flex md:flex-row md:w-2/3 flex-col md:ml-9 mb-9">
-                        <div className="prose prose-neutral dark:prose-invert">
+                        <div>
                             <h1 className="mb-12 text-2xl font-medium tracking-tight">
                                 Kdo jsem?
                                 {
@@ -76,10 +82,11 @@ export default function Page() {
                     </div>
                 </div>
             </section>
-            <ScreenWideSection background={<Image
-                className="-z-10 object-center object-cover"
+            <ScreenWideSection
+                /*  background={<Image
+               className="-z-10 object-center object-cover"
                 src={"/photos/bg-forest-sharp-thin.jpg"} alt={"Calm Forest"} fill
-            />}>
+            />}*/>
                 <div className="flex flex-col md:flex-row py-16">
                     {cards.map(card => (
                         <div key={card.title} className="w-full md:w-1/3">
@@ -88,7 +95,7 @@ export default function Page() {
                     ))}
                 </div>
             </ScreenWideSection>
-            <section className="relative w-screen -ml-[calc(50vw-50%)] bg-violet-100" id="contact">
+            <section className="relative w-screen -ml-[calc(50vw-50%)]" id="contact">
                 <div className="">
                     <div className="flex flex-col w-full max-w-[960px] mx-auto justify-center">
                         <div className=" mt-16 ml-6 md:ml-9 text-2xl font-medium tracking-tight">
