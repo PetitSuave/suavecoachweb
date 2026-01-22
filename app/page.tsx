@@ -7,9 +7,9 @@ import {LuMail, LuPhoneIncoming, LuReceiptEuro} from "react-icons/lu";
 import {ScreenWideSection} from "./components/screen-wide-section";
 
 const cards = [{
-    title: "Kafe s koučkou",
-    text: <> Pojďme si nezávisle pokecat o&nbsp;tom, co ti koučink může přinést a&nbsp;jak nastavit naši spolupráci. </>,
-    text2: <>On-line<br /> 30 minut <br /> Zdarma </>,
+    title: "Kariérní koučink",
+    text: <>Pro běžné i&nbsp;těžké životní situace, lifestylové změny, osobnostní či&nbsp;kariérní rozovoj nebo pomoc v&nbsp;rozhodování.</>,
+    text2: <>Osobně i on-line<br/> 50/80 minut <br /> 600 - 1250 Kč </>,
     link: "/work"
 }, {
     title: "Koučink pro Život",
@@ -67,6 +67,23 @@ export default function Page() {
                     ))}
                 </div>
             </div>
+            </section>
+            <section className="relative">
+                <div className="w-full max-w-[960px] mx-auto flex flex-row">
+                    <div className="flex md:flex-row md:w-1/3 md:ml-9 mb-9 w-full">
+                        <Image
+                            src="/photos/coffee.png"
+                            alt="Šálek kávy"
+                            width={400} height={400}
+                            className="sm:max-w-96 mx-auto md:max-w-full invert-[0.7]"
+                        />
+                    </div>
+                    <div className="flex md:flex-col md:w-2/3 md:ml-9 mb-9 w-full">
+                        <p className="text-4xl font-bold">Kafe s koučkou</p>
+                        <p> Pojďme se setkat on-line a nezávisle pokecat o&nbsp;tom, co ti koučink může přinést a&nbsp;jak nastavit naši spolupráci. </p>
+                        <p className="text-3xl font-bold"> 30 minut zdarma </p>
+                    </div>
+                </div>
             </section>
             <section className="relative">
             <div className="w-full max-w-[960px] mx-auto">
